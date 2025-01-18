@@ -28,7 +28,7 @@
               },
               {
                 "glob": "**/*",
-                "input": "app/assets"
+                "input": "src/assets"
               }
             ],
             "styles": [
