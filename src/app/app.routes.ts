@@ -14,6 +14,6 @@ export const routes: Routes = [
   { path: 'certificates', component: CertificatesComponent },
   { path: 'work-experience', component: WorkExperienceComponent },
 
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', pathMatch: 'full', redirectTo: '/home' },
   { path: '**', component: PageNotFoundComponent },
 ];
