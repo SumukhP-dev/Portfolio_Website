@@ -6,10 +6,25 @@ import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 import { ResumeComponent } from './resume/resume/resume.component';
 import { HomeComponent } from './home/home/home.component';
+import { CertificatesComponent } from './certificates/certificates.component';
+import { WorkExperienceComponent } from './work-experience/work-experience/work-experience.component';
+import { CodeExamplesComponent } from './code-examples/code-examples/code-examples.component';
+import { NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [],
-  imports: [AppComponent, HomeComponent, ResumeComponent, BrowserModule, CoreModule, RouterModule.forRoot(routes)],
+  imports: [
+    AppComponent,
+    HomeComponent,
+    ResumeComponent,
+    CertificatesComponent,
+    WorkExperienceComponent,
+    CodeExamplesComponent,
+    BrowserModule,
+    CoreModule,
+    NgbCarousel,
+    RouterModule.forRoot(routes),
+  ],
   providers: [],
   bootstrap: [],
 })
