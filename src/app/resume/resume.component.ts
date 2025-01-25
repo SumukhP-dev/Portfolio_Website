@@ -5,7 +5,6 @@ import { NgxDocViewerModule } from 'ngx-doc-viewer';
   selector: 'app-resume',
   imports: [NgxDocViewerModule],
   templateUrl: './resume.component.html',
-  styleUrl: './resume.component.css',
 })
 export class ResumeComponent {
   documenturl =

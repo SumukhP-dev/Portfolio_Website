@@ -4,14 +4,14 @@ import { CoreModule } from './core/core.module';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
-import { ResumeComponent } from './resume/resume/resume.component';
-import { HomeComponent } from './home/home/home.component';
-import { CertificatesComponent } from './certificates/certificates.component';
-import { WorkExperienceComponent } from './work-experience/work-experience/work-experience.component';
-import { CodeExamplesComponent } from './code-examples/code-examples/code-examples.component';
 import { NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
 import { StoreModule } from '@ngrx/store';
 import { dataReducer } from './app.state';
+import { CertificatesComponent } from './certificates/certificates.component';
+import { CodeExamplesComponent } from './code-examples/code-examples.component';
+import { HomeComponent } from './home/home.component';
+import { ResumeComponent } from './resume/resume.component';
+import { WorkExperienceComponent } from './work-experience/work-experience.component';
 @NgModule({
   declarations: [],
   imports: [
