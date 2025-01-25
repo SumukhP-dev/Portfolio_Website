@@ -10,7 +10,8 @@ import { CertificatesComponent } from './certificates/certificates.component';
 import { WorkExperienceComponent } from './work-experience/work-experience/work-experience.component';
 import { CodeExamplesComponent } from './code-examples/code-examples/code-examples.component';
 import { NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
-
+import { StoreModule } from '@ngrx/store';
+import { dataReducer } from './app.state';
 @NgModule({
   declarations: [],
   imports: [
@@ -24,6 +25,7 @@ import { NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
     CoreModule,
     NgbCarousel,
     RouterModule.forRoot(routes),
+    StoreModule.forRoot({ data: dataReducer }),
   ],
   providers: [],
   bootstrap: [],

@@ -23,6 +23,7 @@
     "@angular/ssr": "^19.0.7",
     "@netlify/angular-runtime": "^2.2.1",
     "@ng-bootstrap/ng-bootstrap": "^18.0.0",
+    "@ngrx/store": "^19.0.0",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "carousel": "^0.0.3",
