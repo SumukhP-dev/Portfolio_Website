@@ -14,34 +14,26 @@ import {
 } from '@angular/router';
 import { DropdownDirective } from '../../features/dropdown/dropdown.directive';
 import { HostComponent } from '../../features/host/host.component';
-import { Store } from '@ngrx/store';
-import { setWrapper } from '../../../app.state';
+import { createSelector, Store } from '@ngrx/store';
+import { toggleWrapper } from '../../../app.state';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-header',
-  standalone: true,
-  imports: [
-    RouterLink,
-    RouterModule,
-    RouterOutlet,
-    DropdownDirective,
-    HostComponent,
-  ],
+  imports: [RouterLink, RouterModule],
   templateUrl: './header.component.html',
 })
 export class HeaderComponent {
-  wrapper = true;
+  wrapper$: Observable<boolean>;
 
-  constructor(private store: Store<{ wrapper: boolean }>) {}
-
-  ngOnInit() {}
-
-  sendDataToStore() {
-    setWrapper(this.wrapper);
-    this.store.dispatch(setWrapper(this.wrapper));
+  constructor(private store: Store<{ wrapper: boolean }>) {
+    this.wrapper$ = store.select('wrapper');
   }
 
   toggleWrapper() {
-    this.wrapper = false;
+    this.store.dispatch(toggleWrapper());
+    this.wrapper$.subscribe((value) => console.log(value));
   }
+
+  ngOnInit() {}
 }

@@ -1,35 +1,18 @@
 <nav class="navbar border-bottom border-body bg-black" data-bs-theme="dark">
   <div class="left-0 top-0 pl-5 text-lg">
-    <a
-      class="navbar-brand text-green-400"
-      routerLink="/home"
-      onclick="toggleWrapper()"
-      >Home</a
+    <button (click)="toggleWrapper()">Click Me!</button>,
+    <a class="navbar-brand text-green-400" routerLink="/home">Home</a>
+    <a class="navbar-brand text-green-400" routerLink="/gtwrapped">GTWrapped</a>
+    <a class="navbar-brand text-green-400" routerLink="/healthtracker"
+      >HealthTracker</a
     >
-    <a
-      class="navbar-brand text-green-400"
-      routerLink="/code-examples"
-      onclick="toggleWrapper()"
-      >Code Examples</a
+    <a class="navbar-brand text-green-400" routerLink="/mymoneytracker"
+      >MyMoneyTracker</a
     >
-    <a
-      class="navbar-brand text-green-400"
-      routerLink="/work-experience"
-      onclick="toggleWrapper()"
-      >Work experience</a
+    <a class="navbar-brand text-green-400" routerLink="/nextjsdashboard"
+      >NextjsDashboard</a
     >
-    <a
-      class="navbar-brand text-green-400"
-      routerLink="/certificates"
-      onclick="toggleWrapper()"
-      >Certificates</a
-    >
-    <a
-      class="navbar-brand text-green-400"
-      routerLink="/resume"
-      onclick="toggleWrapper()"
-      >Resume</a
-    >
+    <a class="navbar-brand text-green-400" routerLink="/resume">Resume</a>
     <a
       class="navbar-brand text-green-400 absolute right-0"
       target="_blank"

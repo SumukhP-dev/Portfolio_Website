@@ -6,26 +6,20 @@ import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 import { NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
 import { StoreModule } from '@ngrx/store';
-import { dataReducer } from './app.state';
-import { CertificatesComponent } from './certificates/certificates.component';
-import { CodeExamplesComponent } from './code-examples/code-examples.component';
+import { wrapperFeature } from './app.state';
 import { HomeComponent } from './home/home.component';
 import { ResumeComponent } from './resume/resume.component';
-import { WorkExperienceComponent } from './work-experience/work-experience.component';
 @NgModule({
   declarations: [],
   imports: [
     AppComponent,
     HomeComponent,
     ResumeComponent,
-    CertificatesComponent,
-    WorkExperienceComponent,
-    CodeExamplesComponent,
     BrowserModule,
     CoreModule,
     NgbCarousel,
     RouterModule.forRoot(routes),
-    StoreModule.forRoot({ data: dataReducer }),
+    StoreModule.forFeature(wrapperFeature),
   ],
   providers: [],
   bootstrap: [],

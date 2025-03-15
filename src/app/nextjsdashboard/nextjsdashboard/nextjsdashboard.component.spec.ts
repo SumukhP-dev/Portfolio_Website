@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CodeExamplesComponent } from './code-examples.component';
+import { NextjsdashboardComponent } from './nextjsdashboard.component';
 
-describe('CodeExamplesComponent', () => {
-  let component: CodeExamplesComponent;
-  let fixture: ComponentFixture<CodeExamplesComponent>;
+describe('NextjsdashboardComponent', () => {
+  let component: NextjsdashboardComponent;
+  let fixture: ComponentFixture<NextjsdashboardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CodeExamplesComponent]
+      imports: [NextjsdashboardComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CodeExamplesComponent);
+    fixture = TestBed.createComponent(NextjsdashboardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

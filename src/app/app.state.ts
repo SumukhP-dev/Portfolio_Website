@@ -1,19 +1,29 @@
-import { createAction, createReducer, on, props } from '@ngrx/store';
+import { createAction, createFeature, createReducer, on } from '@ngrx/store';
 
-export const setWrapper = createAction(
-  '[Wrapper] Set Wrapper',
-  (payload: boolean) => ({ payload })
-);
-
-export interface AppState {
+interface State {
   wrapper: boolean;
 }
 
-export const initialState: AppState = {
-  wrapper: false,
+const initialState: State = {
+  wrapper: true,
 };
 
-export const dataReducer = createReducer(
-  initialState,
-  on(setWrapper, (state, wrapper) => ({ ...state }))
-);
+export const toggleWrapper = createAction('[Wrapper Component] Toggle');
+
+export const wrapperFeature = createFeature({
+  name: 'wrapper',
+  reducer: createReducer(
+    initialState,
+    on(toggleWrapper, (state) => ({
+      ...state,
+      wrapper: false,
+    }))
+  ),
+});
+
+export const {
+  name, // feature name
+  reducer, // feature reducer
+  selectWrapperState, // feature selector
+  selectWrapper, // selector for `wrapper` property
+} = wrapperFeature;

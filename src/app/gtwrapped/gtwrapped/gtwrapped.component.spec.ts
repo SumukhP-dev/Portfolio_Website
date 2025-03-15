@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WorkExperienceComponent } from './work-experience.component';
+import { GtwrappedComponent } from './gtwrapped.component';
 
-describe('WorkExperienceComponent', () => {
-  let component: WorkExperienceComponent;
-  let fixture: ComponentFixture<WorkExperienceComponent>;
+describe('GtwrappedComponent', () => {
+  let component: GtwrappedComponent;
+  let fixture: ComponentFixture<GtwrappedComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [WorkExperienceComponent]
+      imports: [GtwrappedComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(WorkExperienceComponent);
+    fixture = TestBed.createComponent(GtwrappedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
