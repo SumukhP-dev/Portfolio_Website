@@ -1,4 +1,10 @@
-import { createAction, createFeature, createReducer, on } from '@ngrx/store';
+import {
+  createAction,
+  createFeature,
+  createReducer,
+  createSelector,
+  on,
+} from '@ngrx/store';
 
 interface State {
   wrapper: boolean;
@@ -25,5 +31,9 @@ export const {
   name, // feature name
   reducer, // feature reducer
   selectWrapperState, // feature selector
-  selectWrapper, // selector for `wrapper` property
 } = wrapperFeature;
+
+export const selectWrapper = createSelector(
+  selectWrapperState,
+  (state) => state.wrapper
+);

@@ -1,5 +1,5 @@
 <host>
-  <p *ngIf="wrapper" [dropdown]="parent">
+  <p *ngIf="wrapper$ | async as wrapper" [dropdown]="parent">
     <ng-template #parent>
       <html class="dark">
         <body class="bg-black text-green-400">

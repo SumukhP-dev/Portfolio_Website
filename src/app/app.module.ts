@@ -9,6 +9,7 @@ import { StoreModule } from '@ngrx/store';
 import { wrapperFeature } from './app.state';
 import { HomeComponent } from './home/home.component';
 import { ResumeComponent } from './resume/resume.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [],
   imports: [
@@ -20,6 +21,7 @@ import { ResumeComponent } from './resume/resume.component';
     NgbCarousel,
     RouterModule.forRoot(routes),
     StoreModule.forFeature(wrapperFeature),
+    FormsModule,
   ],
   providers: [],
   bootstrap: [],

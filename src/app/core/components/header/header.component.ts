@@ -1,4 +1,5 @@
 import {
+  ChangeDetectorRef,
   Component,
   ComponentRef,
   EmbeddedViewRef,
@@ -15,7 +16,11 @@ import {
 import { DropdownDirective } from '../../features/dropdown/dropdown.directive';
 import { HostComponent } from '../../features/host/host.component';
 import { createSelector, Store } from '@ngrx/store';
-import { toggleWrapper } from '../../../app.state';
+import {
+  selectWrapper,
+  toggleWrapper,
+  wrapperFeature,
+} from '../../../app.state';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -25,13 +30,19 @@ import { Observable } from 'rxjs';
 })
 export class HeaderComponent {
   wrapper$: Observable<boolean>;
+  cRef: ChangeDetectorRef;
 
-  constructor(private store: Store<{ wrapper: boolean }>) {
-    this.wrapper$ = store.select('wrapper');
+  constructor(
+    private store: Store<{ wrapper: boolean }>,
+    cRef: ChangeDetectorRef
+  ) {
+    this.cRef = cRef;
+    this.wrapper$ = this.store.select(selectWrapper);
   }
 
   toggleWrapper() {
     this.store.dispatch(toggleWrapper());
+    this.wrapper$ = this.store.select(selectWrapper);
     this.wrapper$.subscribe((value) => console.log(value));
   }
 
