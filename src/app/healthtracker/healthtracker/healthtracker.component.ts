@@ -21,6 +21,9 @@ export class HealthtrackerComponent {
     '/images/healthtracker/WorkoutPlans.jpeg',
     '/images/healthtracker/WorkoutTrackerPage.jpeg',
     '/images/healthtracker/CommunityPage.jpeg',
+    '/images/healthtracker/database-console-firebase.png',
+    '/images/healthtracker/database-console-firebase-2.png',
+    '/images/healthtracker/database-console-firebase-3.png',
   ];
 
   paused = false;
