@@ -1,23 +1,41 @@
-<nav class="navbar border-bottom border-body bg-black" data-bs-theme="dark">
-  <div class="left-0 top-0 pl-5 text-lg">
-    <button (click)="toggleWrapper()">Click Me!</button>,
-    <a class="navbar-brand text-green-400" routerLink="/home">Home</a>
-    <a class="navbar-brand text-green-400" routerLink="/gtwrapped">GTWrapped</a>
-    <a class="navbar-brand text-green-400" routerLink="/healthtracker"
-      >HealthTracker</a
-    >
-    <a class="navbar-brand text-green-400" routerLink="/mymoneytracker"
-      >MyMoneyTracker</a
-    >
-    <a class="navbar-brand text-green-400" routerLink="/nextjsdashboard"
-      >NextjsDashboard</a
-    >
-    <a class="navbar-brand text-green-400" routerLink="/resume">Resume</a>
-    <a
-      class="navbar-brand text-green-400 absolute right-0"
-      target="_blank"
-      href="https://www.linkedin.com/in/sumukh-paspuleti/"
-      >Linkedin Profile</a
-    >
+<nav
+  class="navbar border-bottom border-body bg-black mx-auto p-4"
+  data-bs-theme="dark"
+>
+  <div class="left-0 top-0 text-lg container-fluid">
+    <div class="navbar-start">
+      <button (click)="toggleWrapper()">Click Me!</button>,
+      <a class="navbar-item text-green-400 mx-2" routerLink="/home">Home</a>
+      <a class="navbar-item text-green-400" routerLink="/gtwrapped"
+        >GTWrapped</a
+      >
+      <a class="navbar-item text-green-400 mx-2" routerLink="/healthtracker"
+        >HealthTracker</a
+      >
+      <a class="navbar-item text-green-400 mx-2" routerLink="/mymoneytracker"
+        >MyMoneyTracker</a
+      >
+      <a class="navbar-item text-green-400 mx-2" routerLink="/nextjsdashboard"
+        >NextjsDashboard</a
+      >
+      <a class="navbar-item text-green-400 mx-2" routerLink="/weathernow"
+        >WeatherNow</a
+      >
+      <a class="navbar-item text-green-400 mx-2" routerLink="/resume">Resume</a>
+    </div>
+    <div class="navbar-end">
+      <a
+        class="navbar-item text-green-400 mx-2"
+        target="_blank"
+        href="https://www.linkedin.com/in/sumukh-paspuleti/"
+        >Linkedin Profile</a
+      >
+      <a
+        class="navbar-item text-green-400 mx-2"
+        target="_blank"
+        href="https://github.com/SumukhP-dev"
+        >GitHub Account</a
+      >
+    </div>
   </div>
 </nav>

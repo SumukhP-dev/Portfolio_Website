@@ -7,6 +7,7 @@ import { MyMoneyTrackerComponent } from './mymoneytracker/mymoneytracker/mymoney
 import { GtwrappedComponent } from './gtwrapped/gtwrapped/gtwrapped.component';
 import { HealthtrackerComponent } from './healthtracker/healthtracker/healthtracker.component';
 import { NextjsdashboardComponent } from './nextjsdashboard/nextjsdashboard/nextjsdashboard.component';
+import { WeathernowComponent } from './weathernow/weathernow.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -15,6 +16,7 @@ export const routes: Routes = [
   { path: 'gtwrapped', component: GtwrappedComponent },
   { path: 'healthtracker', component: HealthtrackerComponent },
   { path: 'nextjsdashboard', component: NextjsdashboardComponent },
+  { path: 'weathernow', component: WeathernowComponent },
 
   { path: '', component: HomeComponent },
   { path: '**', component: PageNotFoundComponent },
