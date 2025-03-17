@@ -2,9 +2,11 @@
   <p *ngIf="wrapper$ | async as wrapper" [dropdown]="parent">
     <ng-template #parent>
       <html class="dark">
-        <body class="bg-black text-green-400 h-screen">
+        <body class="bg-black text-green-400">
           <div class="flex items-center justify-center p-3 text-5xl">
-            <h1>Welcome to my Portfolio Website</h1>
+            <h1 class="bg-black text-green-400">
+              Welcome to my Portfolio Website
+            </h1>
           </div>
           <!-- container -->
           <div class="#container p-10">
@@ -23,7 +25,8 @@
                   <div class="card-body p-4">
                     <h4 class="fw-bold mb-4">GTWrapped App</h4>
                     <p class="text-muted mb-4">
-                      <i class="far fa-clock" aria-hidden="true"></i> 2024
+                      <i class="far fa-clock" aria-hidden="true"></i> February
+                      2024- Current
                     </p>
                     <p class="mb-0">
                       I led a team of 12 computer science students to develop a
