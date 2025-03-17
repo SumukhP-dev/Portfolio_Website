@@ -1,6 +1,7 @@
 # Portfolio
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.7.
+You can visit the link: [https://transcendent-starlight-c813e5.netlify.app/](https://transcendent-starlight-c813e5.netlify.app/).
 
 ## Development server
 
