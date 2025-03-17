@@ -10,13 +10,13 @@ import { NextjsdashboardComponent } from './nextjsdashboard/nextjsdashboard/next
 import { WeathernowComponent } from './weathernow/weathernow.component';
 
 export const routes: Routes = [
-  { path: 'home/', component: HomeComponent },
-  { path: 'resume/', component: ResumeComponent },
-  { path: 'mymoneytracker/', component: MyMoneyTrackerComponent },
-  { path: 'gtwrapped/', component: GtwrappedComponent },
-  { path: 'healthtracker/', component: HealthtrackerComponent },
-  { path: 'nextjsdashboard/', component: NextjsdashboardComponent },
-  { path: 'weathernow/', component: WeathernowComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'resume', component: ResumeComponent },
+  { path: 'mymoneytracker', component: MyMoneyTrackerComponent },
+  { path: 'gtwrapped', component: GtwrappedComponent },
+  { path: 'healthtracker', component: HealthtrackerComponent },
+  { path: 'nextjsdashboard', component: NextjsdashboardComponent },
+  { path: 'weathernow', component: WeathernowComponent },
 
   { path: '', component: HomeComponent },
   { path: '**', component: PageNotFoundComponent },
