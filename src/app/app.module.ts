@@ -10,6 +10,8 @@ import { wrapperFeature } from './app.state';
 import { HomeComponent } from './home/home.component';
 import { ResumeComponent } from './resume/resume.component';
 import { FormsModule } from '@angular/forms';
+import { StartComponent } from './start/start.component';
+
 @NgModule({
   declarations: [],
   imports: [
@@ -17,6 +19,7 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     ResumeComponent,
     BrowserModule,
+    StartComponent,
     CoreModule,
     NgbCarousel,
     RouterModule.forRoot(routes),

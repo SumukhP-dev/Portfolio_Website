@@ -8,6 +8,7 @@ import { GtwrappedComponent } from './gtwrapped/gtwrapped/gtwrapped.component';
 import { HealthtrackerComponent } from './healthtracker/healthtracker/healthtracker.component';
 import { NextjsdashboardComponent } from './nextjsdashboard/nextjsdashboard/nextjsdashboard.component';
 import { WeathernowComponent } from './weathernow/weathernow.component';
+import { StartComponent } from './start/start.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -18,6 +19,6 @@ export const routes: Routes = [
   { path: 'nextjsdashboard', component: NextjsdashboardComponent },
   { path: 'weathernow', component: WeathernowComponent },
 
-  { path: '', component: HomeComponent },
+  { path: '', component: StartComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
