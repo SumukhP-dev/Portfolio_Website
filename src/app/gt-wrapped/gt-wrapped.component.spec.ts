@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderComponent } from './header.component';
+import { GtwrappedComponent } from './gt-wrapped.component';
 
-describe('HeaderComponent', () => {
-  let component: HeaderComponent;
-  let fixture: ComponentFixture<HeaderComponent>;
+describe('GtwrappedComponent', () => {
+  let component: GtwrappedComponent;
+  let fixture: ComponentFixture<GtwrappedComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HeaderComponent],
+      imports: [GtwrappedComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(HeaderComponent);
+    fixture = TestBed.createComponent(GtwrappedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -45,9 +45,9 @@ export class StartComponent implements OnInit {
 
     setTimeout(() => {
       this.wrapper$ = this.store.select(selectWrapper);
-      this.wrapper$.subscribe((value) => {
-        console.log(value);
-      });
+      // this.wrapper$.subscribe((value) => {
+      //   console.log(value);
+      // });
     }, 3000);
   }
 

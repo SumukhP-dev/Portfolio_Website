@@ -1,50 +1,55 @@
-import {
-  ChangeDetectorRef,
-  Component,
-  ComponentRef,
-  EmbeddedViewRef,
-  TemplateRef,
-  ViewChild,
-  ViewContainerRef,
-} from '@angular/core';
-import {
-  provideRouter,
-  RouterLink,
-  RouterModule,
-  RouterOutlet,
-} from '@angular/router';
-import { DropdownDirective } from '../../features/dropdown/dropdown.directive';
-import { HostComponent } from '../../features/host/host.component';
-import { createSelector, Store } from '@ngrx/store';
-import {
-  selectWrapper,
-  toggleWrapper,
-  wrapperFeature,
-} from '../../../app.state';
-import { Observable } from 'rxjs';
+import { Component } from '@angular/core';
+import { RouterLink, RouterModule } from '@angular/router';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonModule } from '@angular/material/button';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink, RouterModule],
+  imports: [
+    RouterLink,
+    RouterModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatIconModule,
+    CommonModule,
+  ],
   templateUrl: './header.component.html',
 })
 export class HeaderComponent {
-  wrapper$: Observable<boolean>;
-  cRef: ChangeDetectorRef;
-
-  constructor(
-    private store: Store<{ wrapper: boolean }>,
-    cRef: ChangeDetectorRef
-  ) {
-    this.cRef = cRef;
-    this.wrapper$ = this.store.select(selectWrapper);
-  }
-
-  toggleWrapper() {
-    this.store.dispatch(toggleWrapper());
-    this.wrapper$ = this.store.select(selectWrapper);
-    this.wrapper$.subscribe((value) => console.log(value));
-  }
+  webButtonsVisible = true;
+  gameButtonsVisible = false;
+  embeddedButtonsVisible = false;
+  internetTechnologyButtonsVisible = false;
 
   ngOnInit() {}
+
+  nextHeaders() {
+    console.log('Test');
+
+    if (this.webButtonsVisible) {
+      this.webButtonsVisible = false;
+      this.gameButtonsVisible = true;
+    } else if (this.gameButtonsVisible) {
+      this.gameButtonsVisible = false;
+      this.embeddedButtonsVisible = true;
+    } else if (this.embeddedButtonsVisible) {
+      this.embeddedButtonsVisible = false;
+      this.internetTechnologyButtonsVisible = true;
+    } else if (this.internetTechnologyButtonsVisible) {
+      this.internetTechnologyButtonsVisible = false;
+      this.webButtonsVisible = true;
+    }
+
+    console.log(
+      this.webButtonsVisible +
+        ' ' +
+        this.gameButtonsVisible +
+        ' ' +
+        this.embeddedButtonsVisible +
+        ' ' +
+        this.internetTechnologyButtonsVisible
+    );
+  }
 }
