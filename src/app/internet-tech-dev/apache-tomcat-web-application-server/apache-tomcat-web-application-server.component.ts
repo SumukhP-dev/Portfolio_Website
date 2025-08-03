@@ -15,16 +15,10 @@ import {
 })
 export class ApacheTomcatWebApplicationServerComponent {
   images = [
-    '/images/',
-    '/images/healthtracker/LoginPage.png',
-    '/images/healthtracker/PersonalinfoPage.jpeg',
-    '/images/healthtracker/Calorie.jpeg',
-    '/images/healthtracker/WorkoutPlans.jpeg',
-    '/images/healthtracker/WorkoutTrackerPage.jpeg',
-    '/images/healthtracker/CommunityPage.jpeg',
-    '/images/healthtracker/database-console-firebase.png',
-    '/images/healthtracker/database-console-firebase-2.png',
-    '/images/healthtracker/database-console-firebase-3.png',
+    '/images/internet-tech-dev/apache-tomcat-web-application-server/StartPage.jpg',
+    '/images/internet-tech-dev/apache-tomcat-web-application-server/PhoneStartPage.jpg',
+    '/images/internet-tech-dev/apache-tomcat-web-application-server/RequestsRecordPageDetails.jpg',
+    '/images/internet-tech-dev/apache-tomcat-web-application-server/RequestsRecordPageDetails2.jpg',
   ];
 
   paused = false;
