@@ -14,16 +14,16 @@ import {
 })
 export class HealthtrackerComponent {
   images = [
-    '/images/healthtracker/Sprite.jpeg',
-    '/images/healthtracker/LoginPage.png',
-    '/images/healthtracker/PersonalinfoPage.jpeg',
-    '/images/healthtracker/Calorie.jpeg',
-    '/images/healthtracker/WorkoutPlans.jpeg',
-    '/images/healthtracker/WorkoutTrackerPage.jpeg',
-    '/images/healthtracker/CommunityPage.jpeg',
-    '/images/healthtracker/database-console-firebase.png',
-    '/images/healthtracker/database-console-firebase-2.png',
-    '/images/healthtracker/database-console-firebase-3.png',
+    '/images/web-app-dev/healthtracker/Sprite.jpeg',
+    '/images/web-app-dev/healthtracker/LoginPage.png',
+    '/images/web-app-dev/healthtracker/PersonalinfoPage.jpeg',
+    '/images/web-app-dev/healthtracker/Calorie.jpeg',
+    '/images/web-app-dev/healthtracker/WorkoutPlans.jpeg',
+    '/images/web-app-dev/healthtracker/WorkoutTrackerPage.jpeg',
+    '/images/web-app-dev/healthtracker/CommunityPage.jpeg',
+    '/images/web-app-dev/healthtracker/database-console-firebase.png',
+    '/images/web-app-dev/healthtracker/database-console-firebase-2.png',
+    '/images/web-app-dev/healthtracker/database-console-firebase-3.png',
   ];
 
   paused = false;

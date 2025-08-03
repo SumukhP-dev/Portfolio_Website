@@ -1,14 +1,19 @@
-<body class="bg-black text-green-400 h-screen">
+<body class="bg-black">
   <div class="flex items-center justify-center p-3 text-5xl mb-10">
-    <h1>NextJS Finance Dashboard</h1>
+    <h1>NextJS Finance Dashboard Website</h1>
   </div>
   <div class="ml-10 mr-10">
     <a
-      class="btn btn-primary flex justify-center items-center mb-10"
-      href="https://sample-finance-website.vercel.app/"
-      role="button"
+      class="btn btn-primary flex justify-center items-center mb-2"
       target="_blank"
-      >Link to Website</a
+      href="https://sample-finance-website.vercel.app"
+      >Visit Website</a
+    >
+    <a
+      class="btn btn-primary flex justify-center items-center mb-4"
+      target="_blank"
+      href="https://github.com/SumukhP-dev/NextJs_Finance_Dashboard_Website"
+      >Link to Github Repository</a
     >
     <div class="">
       <ngb-carousel
@@ -20,7 +25,9 @@
       >
         @for (img of images; track img; let i = $index) {
         <ng-template ngbSlide>
-          <div class="picsum-img-wrapper">
+          <div
+            class="picsum-img-wrapper flex flex-row min-h-screen justify-center items-center"
+          >
             <img [src]="img" alt="My image {{ i + 1 }} description" />
           </div>
         </ng-template>
