@@ -7,4 +7,5 @@ module.exports = {
     extend: {},
   },
   plugins: ["@tailwindcss/postcss"],
+  content: ["./src/**/*.{html,ts,scss}"],
 };

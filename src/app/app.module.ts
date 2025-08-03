@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { ResumeComponent } from './resume/resume.component';
 import { FormsModule } from '@angular/forms';
 import { StartComponent } from './start/start.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IgxAvatarModule } from 'igniteui-angular';
 
 @NgModule({
   declarations: [],
@@ -25,6 +27,8 @@ import { StartComponent } from './start/start.component';
     RouterModule.forRoot(routes),
     StoreModule.forFeature(wrapperFeature),
     FormsModule,
+    BrowserAnimationsModule,
+    IgxAvatarModule,
   ],
   providers: [],
   bootstrap: [],

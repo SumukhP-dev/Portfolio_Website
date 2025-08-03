@@ -10,7 +10,7 @@ import {
 @Component({
   selector: 'app-nextjsdashboard',
   imports: [NgbCarouselModule, FormsModule],
-  templateUrl: './nextjsdashboard.component.html',
+  templateUrl: './nextjs-dashboard.component.html',
 })
 export class NextjsdashboardComponent {
   images = [

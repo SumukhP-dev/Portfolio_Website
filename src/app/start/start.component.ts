@@ -21,13 +21,7 @@ import { HomeComponent } from '../home/home.component';
 
 @Component({
   selector: 'app-home',
-  imports: [
-    RouterModule,
-    CoreModule,
-    HostComponent,
-    DropdownDirective,
-    CommonModule,
-  ],
+  imports: [RouterModule, CoreModule, HostComponent, CommonModule],
   templateUrl: './start.component.html',
 })
 export class StartComponent implements OnInit {

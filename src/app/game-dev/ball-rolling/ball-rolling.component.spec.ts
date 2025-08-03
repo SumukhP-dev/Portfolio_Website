@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BallrollinggameComponent } from './ball-rolling-game.component';
+import { BallrollinggameComponent } from './ball-rolling.component';
 
 describe('BallrollinggameComponent', () => {
   let component: BallrollinggameComponent;

@@ -3,8 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-ballrollinggame',
   imports: [],
-  templateUrl: './ballrollinggame.component.html'
+  templateUrl: './ball-rolling.component.html',
 })
-export class BallrollinggameComponent {
-
-}
+export class BallrollingComponent {}

@@ -1,4 +1,4 @@
-<body>
+<!-- <body>
   <nav
     class="navbar border-bottom border-body bg-black mx-auto p-4"
     data-bs-theme="dark"
@@ -24,13 +24,7 @@
           >MyMoneyTracker App</a
         >
         <a class="navbar-item text-green-400 mx-2" routerLink="/mymoneytracker"
-          >Ball Rolling Unity Game</a
-        >
-        <a class="navbar-item text-green-400 mx-2" routerLink="/mymoneytracker"
-          >A Hero's Journey RPG Maker Game</a
-        >
-        <a class="navbar-item text-green-400 mx-2" routerLink="/mymoneytracker"
-          >Avery's Adventure Scratch Game</a
+          >Video Games Projects</a
         >
       </div>
       <div class="navbar-end">
@@ -52,4 +46,90 @@
       </div>
     </div>
   </nav>
-</body>
+</body> -->
+
+<div class="link-primary">
+  <igx-navbar [isActionButtonVisible]="true">
+    <igx-navbar-action>
+      <button igxButton routerLink="/home">
+        <igx-icon style="width: 24px; height: 24px; font-size: 24px"
+          >home</igx-icon
+        >
+      </button>
+      <button
+        igxButton="outlined"
+        [igxToggleAction]="dropdownWebApp"
+        [igxDropDownItemNavigation]="dropdownWebApp"
+      >
+        Web and App Development Projects
+      </button>
+      <igx-drop-down #dropdownWebApp>
+        <igx-drop-down-item routerLink="/healthcarepolicyimpacttracker">
+          Healthcare Policy Impact Tracker
+        </igx-drop-down-item>
+        <igx-drop-down-item routerLink="/nextjsdashboard">
+          Nextjs Finance Dashboard
+        </igx-drop-down-item>
+        <igx-drop-down-item routerLink="/healthtracker">
+          HealthTracker
+        </igx-drop-down-item>
+        <igx-drop-down-item routerLink="/mymoneytracker">
+          MyMoneyTracker
+        </igx-drop-down-item>
+      </igx-drop-down>
+      <button
+        igxButton="outlined"
+        [igxToggleAction]="dropdownGame"
+        [igxDropDownItemNavigation]="dropdownGame"
+        class="mx-2"
+      >
+        Game Development Projects
+      </button>
+      <igx-drop-down #dropdownGame>
+        <igx-drop-down-item routerLink="/averysadventure">
+          Avery's Adventure Scratch Platformer
+        </igx-drop-down-item>
+        <igx-drop-down-item routerLink="/aherosjourney">
+          A Hero's Journey RPG
+        </igx-drop-down-item>
+        <igx-drop-down-item routerLink="/ballrolling">
+          Unity Ball Rolling Game
+        </igx-drop-down-item>
+      </igx-drop-down>
+      <button
+        igxButton="outlined"
+        [igxToggleAction]="dropdownInternet"
+        [igxDropDownItemNavigation]="dropdownInternet"
+        class="mx-2"
+      >
+        Internet Technology Projects
+      </button>
+      <igx-drop-down #dropdownInternet>
+        <igx-drop-down-item routerLink="/apachetomcatwebapplicationserver">
+          Apache Tomcat Web Application Server
+        </igx-drop-down-item>
+        <igx-drop-down-item routerLink="/gtmobisimmobiletracegeneration">
+          GT Mobisim Mobile Trace Generation
+        </igx-drop-down-item>
+        <igx-drop-down-item routerLink="/nutchwebcrawlerwithmemcachedserver">
+          Nutch Web Crawler With Memcached Server
+        </igx-drop-down-item>
+        <igx-drop-down-item routerLink="/votingledgerfabricapplication">
+          Voting Ledger Fabric Application
+        </igx-drop-down-item>
+      </igx-drop-down>
+
+      <button igxButton routerLink="/resume">Resume</button>
+      <a
+        igxButton
+        target="_blank"
+        href="https://www.linkedin.com/in/sumukh-paspuleti/"
+      >
+        Linkedin Profile
+      </a>
+      <a igxButton target="_blank" href="https://github.com/SumukhP-dev">
+        GitHub Account
+      </a>
+    </igx-navbar-action>
+  </igx-navbar>
+</div>

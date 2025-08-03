@@ -10,7 +10,7 @@ import {
 @Component({
   selector: 'app-healthtracker',
   imports: [NgbCarouselModule, FormsModule],
-  templateUrl: './healthtracker.component.html',
+  templateUrl: './health-tracker.component.html',
 })
 export class HealthtrackerComponent {
   images = [
