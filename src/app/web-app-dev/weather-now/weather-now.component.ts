@@ -10,7 +10,7 @@ import {
 @Component({
   selector: 'app-weathernow',
   imports: [NgbCarouselModule, FormsModule],
-  templateUrl: './weathernow.component.html',
+  templateUrl: './weather-now.component.html',
 })
 export class WeathernowComponent {
   images = [

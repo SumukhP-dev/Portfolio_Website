@@ -8,7 +8,6 @@ import { NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
 import { StoreModule } from '@ngrx/store';
 import { wrapperFeature } from './app.state';
 import { HomeComponent } from './home/home.component';
-import { ResumeComponent } from './resume/resume.component';
 import { FormsModule } from '@angular/forms';
 import { StartComponent } from './start/start.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,7 +18,6 @@ import { IgxAvatarModule } from 'igniteui-angular';
   imports: [
     AppComponent,
     HomeComponent,
-    ResumeComponent,
     BrowserModule,
     StartComponent,
     CoreModule,
