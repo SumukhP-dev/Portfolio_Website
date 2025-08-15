@@ -8,15 +8,31 @@
       </button>
       <button
         igxButton="outlined"
+        [igxToggleAction]="dropdownAI"
+        [igxDropDownItemNavigation]="dropdownAI"
+        class="mx-2"
+      >
+        AI Projects
+      </button>
+      <igx-drop-down #dropdownAI>
+        <igx-drop-down-item routerLink="/healthcarepolicyimpacttracker">
+          Healthcare Policy Impact Tracker
+        </igx-drop-down-item>
+        <igx-drop-down-item routerLink="/weathernow">
+          WeatherNow Website
+        </igx-drop-down-item>
+        <igx-drop-down-item routerLink="/carlaaiautopilot">
+          CARLA AI Autopilot
+        </igx-drop-down-item>
+      </igx-drop-down>
+      <button
+        igxButton="outlined"
         [igxToggleAction]="dropdownWebApp"
         [igxDropDownItemNavigation]="dropdownWebApp"
       >
         Web and App Development Projects
       </button>
       <igx-drop-down #dropdownWebApp>
-        <igx-drop-down-item routerLink="/healthcarepolicyimpacttracker">
-          Healthcare Policy Impact Tracker
-        </igx-drop-down-item>
         <igx-drop-down-item routerLink="/nextjsdashboard">
           Nextjs Finance Dashboard
         </igx-drop-down-item>
@@ -49,7 +65,7 @@
         [igxDropDownItemNavigation]="dropdownInternet"
         class="mx-2"
       >
-        Internet Technology Projects
+        Web Server/Crawlers
       </button>
       <igx-drop-down #dropdownInternet>
         <igx-drop-down-item routerLink="/apachetomcatwebapplicationserver">
