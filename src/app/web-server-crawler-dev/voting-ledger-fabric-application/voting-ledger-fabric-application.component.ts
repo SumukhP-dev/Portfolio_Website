@@ -15,9 +15,9 @@ import {
 })
 export class VotingLedgerFabricApplicationComponent {
   images = [
-    '/images/internet-tech-dev/voting-ledger-fabric-application/GetVotesExample.jpg',
-    '/images/internet-tech-dev/voting-ledger-fabric-application/ExamplePuppyVote.jpg',
-    '/images/internet-tech-dev/voting-ledger-fabric-application/ExampleQueryCandidate.jpg',
+    '/images/web-server-crawler-dev/voting-ledger-fabric-application/GetVotesExample.jpg',
+    '/images/web-server-crawler-dev/voting-ledger-fabric-application/ExamplePuppyVote.jpg',
+    '/images/web-server-crawler-dev/voting-ledger-fabric-application/ExampleQueryCandidate.jpg',
   ];
 
   paused = false;

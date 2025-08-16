@@ -14,10 +14,10 @@ import {
 })
 export class BallrollingComponent {
   images = [
-    '/images/rolling-ball-game/SceneImage.png',
-    '/images/rolling-ball-game/StartImage.png',
-    '/images/rolling-ball-game/WinImage.png',
-    '/images/rolling-ball-game/LoseImage.png',
+    '/images/game-dev/rolling-ball-game/SceneImage.png',
+    '/images/game-dev/rolling-ball-game/StartImage.png',
+    '/images/game-dev/rolling-ball-game/WinImage.png',
+    '/images/game-dev/rolling-ball-game/LoseImage.png',
   ];
 
   paused = false;

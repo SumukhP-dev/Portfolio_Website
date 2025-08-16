@@ -14,13 +14,13 @@ import {
 })
 export class AherosjourneyComponent {
   images = [
-    '/images/a-heros-journey-game/StartImage.png',
-    '/images/a-heros-journey-game/IndoorsImage.png',
-    '/images/a-heros-journey-game/NPCDialogueImage.png',
-    '/images/a-heros-journey-game/OutdoorsImage.png',
-    '/images/a-heros-journey-game/IndoorsImage.png',
-    '/images/a-heros-journey-game/Scenario1.png',
-    '/images/a-heros-journey-game/Scenario2.png',
+    '/images/game-dev/a-heros-journey-game/StartImage.png',
+    '/images/game-dev/a-heros-journey-game/IndoorsImage.png',
+    '/images/game-dev/a-heros-journey-game/NPCDialogueImage.png',
+    '/images/game-dev/a-heros-journey-game/OutdoorsImage.png',
+    '/images/game-dev/a-heros-journey-game/IndoorsImage.png',
+    '/images/game-dev/a-heros-journey-game/Scenario1.png',
+    '/images/game-dev/a-heros-journey-game/Scenario2.png',
   ];
 
   paused = false;

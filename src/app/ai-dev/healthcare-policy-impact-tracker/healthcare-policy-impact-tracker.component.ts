@@ -1,26 +1,25 @@
 import { Component, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import {
-  NgbCarousel,
   NgbCarouselModule,
+  NgbCarousel,
   NgbSlideEvent,
   NgbSlideEventSource,
 } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-nutch-web-crawler-with-memcachedserver',
+  selector: 'app-healthcare-policy-impact-tracker',
   imports: [NgbCarouselModule, FormsModule],
-  templateUrl: './nutch-web-crawler-with-memcachedserver.component.html',
-  styleUrl: './nutch-web-crawler-with-memcachedserver.component.scss',
+  templateUrl: './healthcare-policy-impact-tracker.component.html',
 })
-export class NutchWebCrawlerWithMemcachedserverComponent {
+export class HealthcarePolicyImpactTrackerComponent {
   images = [
-    '/images/web-server-crawler-dev/nutch-web-crawler-with-memcachedserver/URLCrawlExample.png',
-    '/images/web-server-crawler-dev/nutch-web-crawler-with-memcachedserver/URLCrawlExampleFinished.png',
-    '/images/web-server-crawler-dev/nutch-web-crawler-with-memcachedserver/LuceneSearchEngineExample.png',
-    '/images/web-server-crawler-dev/nutch-web-crawler-with-memcachedserver/StartServerCommandLine.png',
-    '/images/web-server-crawler-dev/nutch-web-crawler-with-memcachedserver/MemcachedServerCode.png',
-    '/images/web-server-crawler-dev/nutch-web-crawler-with-memcachedserver/MemcachedServerStoreDataInCache.png',
+    '/images/ai-dev/weather-now/frontend-image-1.png',
+    '/images/ai-dev/weather-now/frontend-image-2.png',
+    '/images/ai-dev/weather-now/frontend-image-3.png',
+    '/images/ai-dev/weather-now/project-diagram-dataset.png',
+    '/images/ai-dev/weather-now/project-diagram.png',
+    '/images/ai-dev/weather-now/website-path-diagram.png',
   ];
 
   paused = false;

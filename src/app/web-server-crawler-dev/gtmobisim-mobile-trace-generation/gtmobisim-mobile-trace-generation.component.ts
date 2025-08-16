@@ -15,13 +15,13 @@ import {
 })
 export class GtmobisimMobileTraceGenerationComponent {
   images = [
-    '/images/internet-tech-dev/gtmobisim-mobile-trace-generation/10AgentTrace.png',
-    '/images/internet-tech-dev/gtmobisim-mobile-trace-generation/10AgentTraceMap.png',
-    '/images/internet-tech-dev/gtmobisim-mobile-trace-generation/10AgentTraceMap2.png',
-    '/images/internet-tech-dev/gtmobisim-mobile-trace-generation/10AgentTraceMap3.png',
-    '/images/internet-tech-dev/gtmobisim-mobile-trace-generation/10AgentTraceMap4.png',
-    '/images/internet-tech-dev/gtmobisim-mobile-trace-generation/10AgentTraceMap5.png',
-    '/images/internet-tech-dev/gtmobisim-mobile-trace-generation/1000000AgentTrace.png',
+    '/images/web-server-crawler-dev/gtmobisim-mobile-trace-generation/10AgentTrace.png',
+    '/images/web-server-crawler-dev/gtmobisim-mobile-trace-generation/10AgentTraceMap.png',
+    '/images/web-server-crawler-dev/gtmobisim-mobile-trace-generation/10AgentTraceMap2.png',
+    '/images/web-server-crawler-dev/gtmobisim-mobile-trace-generation/10AgentTraceMap3.png',
+    '/images/web-server-crawler-dev/gtmobisim-mobile-trace-generation/10AgentTraceMap4.png',
+    '/images/web-server-crawler-dev/gtmobisim-mobile-trace-generation/10AgentTraceMap5.png',
+    '/images/web-server-crawler-dev/gtmobisim-mobile-trace-generation/1000000AgentTrace.png',
   ];
 
   paused = false;

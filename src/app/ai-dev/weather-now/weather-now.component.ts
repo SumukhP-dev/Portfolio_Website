@@ -14,12 +14,12 @@ import {
 })
 export class WeathernowComponent {
   images = [
-    '/images/weathernow/main-weather-page.png',
-    '/images/weathernow/contact-us-page.png',
-    '/images/weathernow/forecast-page.png',
-    '/images/weathernow/figma-forecast-page.png',
-    '/images/weathernow/figma-heatmap-page.png',
-    '/images/weathernow/figma-login-page.png',
+    '/images/ai-dev/weather-now/main-weather-page.png',
+    '/images/ai-dev/weather-now/contact-us-page.png',
+    '/images/ai-dev/weather-now/forecast-page.png',
+    '/images/ai-dev/weather-now/figma-forecast-page.png',
+    '/images/ai-dev/weather-now/figma-heatmap-page.png',
+    '/images/ai-dev/weather-now/figma-login-page.png',
   ];
 
   paused = false;

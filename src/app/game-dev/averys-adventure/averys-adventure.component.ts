@@ -14,10 +14,10 @@ import {
 })
 export class AverysadventureComponent {
   images = [
-    '/images/averys-adventure/StartImage.png',
-    '/images/averys-adventure/BeginningImage.png',
-    '/images/averys-adventure/MidwayImage.png',
-    '/images/averys-adventure/WinImage.png',
+    '/images/game-dev/averys-adventure/StartImage.png',
+    '/images/game-dev/averys-adventure/BeginningImage.png',
+    '/images/game-dev/averys-adventure/MidwayImage.png',
+    '/images/game-dev/averys-adventure/WinImage.png',
   ];
 
   paused = false;
