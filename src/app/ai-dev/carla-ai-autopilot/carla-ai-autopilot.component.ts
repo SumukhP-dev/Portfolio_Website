@@ -9,7 +9,50 @@ import {
 
 @Component({
   selector: 'app-carla-ai-autopilot',
-  imports: [],
+  imports: [NgbCarouselModule, FormsModule],
   templateUrl: './carla-ai-autopilot.component.html',
 })
-export class CarlaAiAutopilotComponent {}
+export class CarlaAiAutopilotComponent {
+  images = [
+    '/images/ai-dev/carla-ai-autopilot/0000.jpg',
+    '/images/ai-dev/carla-ai-autopilot/0434.jpg',
+    '/images/ai-dev/carla-ai-autopilot/0974.jpg',
+    '/images/ai-dev/carla-ai-autopilot/1214.jpg',
+  ];
+
+  paused = false;
+  unpauseOnArrow = false;
+  pauseOnIndicator = false;
+  pauseOnHover = true;
+  pauseOnFocus = true;
+
+  @ViewChild('carousel', { static: true })
+  carousel: NgbCarousel = new NgbCarousel();
+
+  togglePaused() {
+    if (this.paused) {
+      this.carousel.cycle();
+    } else {
+      this.carousel.pause();
+    }
+    this.paused = !this.paused;
+  }
+
+  onSlide(slideEvent: NgbSlideEvent) {
+    if (
+      this.unpauseOnArrow &&
+      slideEvent.paused &&
+      (slideEvent.source === NgbSlideEventSource.ARROW_LEFT ||
+        slideEvent.source === NgbSlideEventSource.ARROW_RIGHT)
+    ) {
+      this.togglePaused();
+    }
+    if (
+      this.pauseOnIndicator &&
+      !slideEvent.paused &&
+      slideEvent.source === NgbSlideEventSource.INDICATOR
+    ) {
+      this.togglePaused();
+    }
+  }
+}

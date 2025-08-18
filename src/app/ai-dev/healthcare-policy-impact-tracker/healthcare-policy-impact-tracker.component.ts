@@ -14,12 +14,12 @@ import {
 })
 export class HealthcarePolicyImpactTrackerComponent {
   images = [
-    '/images/ai-dev/weather-now/frontend-image-1.png',
-    '/images/ai-dev/weather-now/frontend-image-2.png',
-    '/images/ai-dev/weather-now/frontend-image-3.png',
-    '/images/ai-dev/weather-now/project-diagram-dataset.png',
-    '/images/ai-dev/weather-now/project-diagram.png',
-    '/images/ai-dev/weather-now/website-path-diagram.png',
+    '/images/ai-dev/healthcare-policy-impact-tracker/frontend-image-1.png',
+    '/images/ai-dev/healthcare-policy-impact-tracker/frontend-image-2.png',
+    '/images/ai-dev/healthcare-policy-impact-tracker/frontend-image-3.png',
+    '/images/ai-dev/healthcare-policy-impact-tracker/project-diagram-dataset.png',
+    '/images/ai-dev/healthcare-policy-impact-tracker/project-diagram.png',
+    '/images/ai-dev/healthcare-policy-impact-tracker/website-path-diagram.png',
   ];
 
   paused = false;
