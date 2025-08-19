@@ -50,5 +50,5 @@ export const routes: Routes = [
   },
 
   { path: '', component: StartComponent },
-  { path: '**', component: PageNotFoundComponent },
+  { path: '**', component: HomeComponent },
 ];

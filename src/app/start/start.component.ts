@@ -18,6 +18,7 @@ import { ChangeDetectorRef } from '@angular/core';
 import { OnInit, OnDestroy } from '@angular/core';
 import { selectWrapper, toggleWrapper, wrapperFeature } from '../app.state';
 import { HomeComponent } from '../home/home.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -29,12 +30,20 @@ export class StartComponent implements OnInit {
   cRef: ChangeDetectorRef;
   wrapper$: Observable<boolean> | undefined;
   wrapper: any;
+  router: Router;
 
-  constructor(store: Store<{ wrapper: boolean }>, cRef: ChangeDetectorRef) {
+  constructor(
+    store: Store<{ wrapper: boolean }>,
+    cRef: ChangeDetectorRef,
+    router: Router
+  ) {
     this.store = store;
     this.cRef = cRef;
+    this.router = router;
   }
   ngOnInit(): void {
+    this.router.navigate(['/home']);
+
     this.wrapper$ = this.store.select(selectWrapper);
 
     setTimeout(() => {
