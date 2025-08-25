@@ -16,6 +16,7 @@ import { ApacheTomcatWebApplicationServerComponent } from './web-server-crawler-
 import { GtmobisimMobileTraceGenerationComponent } from './web-server-crawler-dev/gtmobisim-mobile-trace-generation/gtmobisim-mobile-trace-generation.component';
 import { NutchWebCrawlerWithMemcachedserverComponent } from './web-server-crawler-dev/nutch-web-crawler-with-memcachedserver/nutch-web-crawler-with-memcachedserver.component';
 import { VotingLedgerFabricApplicationComponent } from './web-server-crawler-dev/voting-ledger-fabric-application/voting-ledger-fabric-application.component';
+import { WordleWeekComponent } from './web-app-dev/wordle-week/wordle-week.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -47,6 +48,10 @@ export const routes: Routes = [
   {
     path: 'votingledgerfabricapplication',
     component: VotingLedgerFabricApplicationComponent,
+  },
+  {
+    path: 'wordleweek',
+    component: WordleWeekComponent,
   },
 
   { path: '', component: StartComponent },
