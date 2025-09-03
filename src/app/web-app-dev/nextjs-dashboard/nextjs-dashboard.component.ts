@@ -14,11 +14,12 @@ import {
 })
 export class NextjsdashboardComponent {
   images = [
-    '/images/web-app-dev/nextjs-dashboard/intro-sample-finance-website-vercel-app.png',
-    '/images/web-app-dev/nextjs-dashboard/login-sample-finance-website-vercel-app.png',
-    '/images/web-app-dev/nextjs-dashboard/sign-up-sample-finance-website-vercel-app.png',
-    '/images/web-app-dev/nextjs-dashboard/dashboard-sample-finance-website-vercel-app.png',
-    '/images/web-app-dev/nextjs-dashboard/create-invoices-sample-finance-website-vercel-app.png',
+    '/images/web-app-dev/nextjs-dashboard/intro-finance-website-vercel-app.png',
+    '/images/web-app-dev/nextjs-dashboard/login-finance-website-vercel-app.png',
+    '/images/web-app-dev/nextjs-dashboard/sign-up-finance-website-vercel-app.png',
+    '/images/web-app-dev/nextjs-dashboard/dashboard-finance-website-vercel-app.png',
+    '/images/web-app-dev/nextjs-dashboard/invoices-finance-website-vercel-app.png',
+    '/images/web-app-dev/nextjs-dashboard/create-invoices-finance-website-vercel-app.png',
     '/images/web-app-dev/nextjs-dashboard/postgresql-console-neon-tech.png',
   ];
 
