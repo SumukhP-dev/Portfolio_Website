@@ -14,9 +14,11 @@ import {
 })
 export class WeathernowComponent {
   images = [
-    '/images/ai-dev/weather-now/main-weather-page.png',
-    '/images/ai-dev/weather-now/contact-us-page.png',
+    '/images/ai-dev/weather-now/home-page-1.png',
+    '/images/ai-dev/weather-now/home-page-2.png',
     '/images/ai-dev/weather-now/forecast-page.png',
+    '/images/ai-dev/weather-now/gemini-chatbot-page.png',
+    '/images/ai-dev/weather-now/rag-chatbot-page.png',
     '/images/ai-dev/weather-now/figma-forecast-page.png',
     '/images/ai-dev/weather-now/figma-heatmap-page.png',
     '/images/ai-dev/weather-now/figma-login-page.png',
