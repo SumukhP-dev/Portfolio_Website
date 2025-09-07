@@ -15,10 +15,7 @@ import {
 })
 export class NutchWebCrawlerWithMemcachedserverComponent {
   images = [
-    '/images/web-server-crawler-dev/nutch-web-crawler-with-memcachedserver/URLCrawlExample.png',
     '/images/web-server-crawler-dev/nutch-web-crawler-with-memcachedserver/URLCrawlExampleFinished.png',
-    '/images/web-server-crawler-dev/nutch-web-crawler-with-memcachedserver/LuceneSearchEngineExample.png',
-    '/images/web-server-crawler-dev/nutch-web-crawler-with-memcachedserver/StartServerCommandLine.png',
     '/images/web-server-crawler-dev/nutch-web-crawler-with-memcachedserver/MemcachedServerCode.png',
     '/images/web-server-crawler-dev/nutch-web-crawler-with-memcachedserver/MemcachedServerStoreDataInCache.png',
   ];

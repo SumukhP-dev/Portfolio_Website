@@ -16,7 +16,6 @@ import {
 export class ApacheTomcatWebApplicationServerComponent {
   images = [
     '/images/web-server-crawler-dev/apache-tomcat-web-application-server/StartPage.jpg',
-    '/images/web-server-crawler-dev/apache-tomcat-web-application-server/PhoneStartPage.jpg',
     '/images/web-server-crawler-dev/apache-tomcat-web-application-server/RequestsRecordPageDetails.jpg',
     '/images/web-server-crawler-dev/apache-tomcat-web-application-server/RequestsRecordPageDetails2.jpg',
   ];
