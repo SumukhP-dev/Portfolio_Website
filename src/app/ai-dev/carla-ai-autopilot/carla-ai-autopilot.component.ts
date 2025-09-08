@@ -15,9 +15,9 @@ import {
 export class CarlaAiAutopilotComponent {
   images = [
     '/images/ai-dev/carla-ai-autopilot/0000.jpg',
-    '/images/ai-dev/carla-ai-autopilot/0434.jpg',
     '/images/ai-dev/carla-ai-autopilot/0974.jpg',
-    '/images/ai-dev/carla-ai-autopilot/1214.jpg',
+    '/images/ai-dev/carla-ai-autopilot/dashboard-1.png',
+    '/images/ai-dev/carla-ai-autopilot/dashboard-2.png',
   ];
 
   paused = false;
