@@ -14,12 +14,15 @@ import {
 })
 export class MyMoneyTrackerComponent {
   images = [
+    '/images/web-app-dev/my-money-tracker/SplashPage.png',
     '/images/web-app-dev/my-money-tracker/LoginPage.png',
     '/images/web-app-dev/my-money-tracker/HomePage.png',
     '/images/web-app-dev/my-money-tracker/HistoryPage.png',
-    '/images/web-app-dev/my-money-tracker/AddTranactionPage.png',
+    '/images/web-app-dev/my-money-tracker/AddDataPage.png',
     '/images/web-app-dev/my-money-tracker/SummaryPage.png',
+    '/images/web-app-dev/my-money-tracker/SettingsPage.png',
     '/images/web-app-dev/my-money-tracker/AzureBackend.png',
+    '/images/web-app-dev/my-money-tracker/LLMPage.png',
     '/images/web-app-dev/my-money-tracker/MyMoneyTrackerSQLEntityRelationDatabaseDiagram.png',
   ];
 
