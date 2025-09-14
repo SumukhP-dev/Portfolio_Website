@@ -17,9 +17,14 @@ import { GtmobisimMobileTraceGenerationComponent } from './web-server-crawler-de
 import { NutchWebCrawlerWithMemcachedserverComponent } from './web-server-crawler-dev/nutch-web-crawler-with-memcachedserver/nutch-web-crawler-with-memcachedserver.component';
 import { VotingLedgerFabricApplicationComponent } from './web-server-crawler-dev/voting-ledger-fabric-application/voting-ledger-fabric-application.component';
 import { WordleWeekComponent } from './web-app-dev/wordle-week/wordle-week.component';
+import { ProjectsResolver } from './resolvers/projects.resolver';
 
 export const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  {
+    path: 'home',
+    component: HomeComponent,
+    resolve: { projects: ProjectsResolver },
+  },
   { path: 'mymoneytracker', component: MyMoneyTrackerComponent },
   { path: 'gtwrapped', component: GtwrappedComponent },
   { path: 'healthtracker', component: HealthtrackerComponent },

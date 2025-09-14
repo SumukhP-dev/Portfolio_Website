@@ -10,7 +10,7 @@ import {
 @Component({
   selector: 'app-gtwrapped',
   imports: [NgbCarouselModule, FormsModule],
-  templateUrl: './gtwrapped.component.html',
+  templateUrl: './gt-wrapped.component.html',
 })
 export class GtwrappedComponent {
   images = [

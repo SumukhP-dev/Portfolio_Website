@@ -42,7 +42,7 @@ export class StartComponent implements OnInit {
     this.router = router;
   }
   ngOnInit(): void {
-    this.router.navigate(['/home']);
+    // this.router.navigate(['/home']);
 
     this.wrapper$ = this.store.select(selectWrapper);
 
