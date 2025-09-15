@@ -1,4 +1,4 @@
-<div class="link-primary">
+<div class="link-primary flex items-center">
   <igx-navbar [isActionButtonVisible]="true">
     <igx-navbar-action>
       <button igxButton routerLink="/home">
@@ -48,37 +48,50 @@
       </igx-drop-down>
       <button
         igxButton="outlined"
-        [igxToggleAction]="dropdownInternet"
-        [igxDropDownItemNavigation]="dropdownInternet"
+        [igxToggleAction]="dropdownWebServer"
+        [igxDropDownItemNavigation]="dropdownWebServer"
         class="mx-2"
       >
         Web Server/Crawlers
       </button>
-      <igx-drop-down #dropdownInternet>
+      <igx-drop-down #dropdownWebServer>
         <igx-drop-down-item routerLink="/apachetomcatwebapplicationserver">
           Apache Tomcat Web Application Server
-        </igx-drop-down-item>
-        <igx-drop-down-item routerLink="/gtmobisimmobiletracegeneration">
-          GT Mobisim Mobile Trace Generation
         </igx-drop-down-item>
         <igx-drop-down-item routerLink="/nutchwebcrawlerwithmemcachedserver">
           Nutch Web Crawler With Memcached Server
         </igx-drop-down-item>
+      </igx-drop-down>
+
+      <button
+        igxButton="outlined"
+        [igxToggleAction]="dropdownBlockchain"
+        [igxDropDownItemNavigation]="dropdownBlockchain"
+        class="mx-2"
+      >
+        Blockchain/Mobile Trace Simulator
+      </button>
+      <igx-drop-down #dropdownBlockchain>
         <igx-drop-down-item routerLink="/votingledgerfabricapplication">
           Voting Ledger Fabric Application
         </igx-drop-down-item>
+        <igx-drop-down-item routerLink="/gtmobisimmobiletracegeneration">
+          GT Mobisim Mobile Trace Generation
+        </igx-drop-down-item>
       </igx-drop-down>
 
-      <a
-        igxButton
-        target="_blank"
-        href="https://www.linkedin.com/in/sumukh-paspuleti/"
-      >
-        Linkedin Profile
-      </a>
-      <a igxButton target="_blank" href="https://github.com/SumukhP-dev">
-        GitHub Account
-      </a>
+      <div class="ml-auto flex items-center gap-3">
+        <a
+          igxButton
+          target="_blank"
+          href="https://www.linkedin.com/in/sumukh-paspuleti/"
+        >
+          Linkedin Profile
+        </a>
+        <a igxButton target="_blank" href="https://github.com/SumukhP-dev">
+          GitHub Account
+        </a>
+      </div>
     </igx-navbar-action>
   </igx-navbar>
 </div>
