@@ -1,9 +1,6 @@
 import {
-  ChangeDetectionStrategy,
   Component,
   ComponentRef,
-  model,
-  SimpleChanges,
   ViewChild,
   ViewContainerRef,
 } from '@angular/core';
@@ -12,17 +9,15 @@ import { CommonModule } from '@angular/common';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
 import { CoreModule } from '../core/core.module';
-import { DropdownDirective } from '../core/features/dropdown/dropdown.directive';
-import { HostComponent } from '../core/features/host/host.component';
 import { ChangeDetectorRef } from '@angular/core';
-import { OnInit, OnDestroy } from '@angular/core';
-import { selectWrapper, toggleWrapper, wrapperFeature } from '../app.state';
+import { OnInit } from '@angular/core';
+import { selectWrapper } from '../app.state';
 import { HomeComponent } from '../home/home.component';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [RouterModule, CoreModule, HostComponent, CommonModule],
+  imports: [RouterModule, CoreModule, CommonModule],
   templateUrl: './start.component.html',
 })
 export class StartComponent implements OnInit {

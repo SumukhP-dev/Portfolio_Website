@@ -18,6 +18,7 @@ export class CarlaAiAutopilotComponent {
     '/images/ai-dev/carla-ai-autopilot/0974.jpg',
     '/images/ai-dev/carla-ai-autopilot/dashboard-1.png',
     '/images/ai-dev/carla-ai-autopilot/dashboard-2.png',
+    '/images/ai-dev/carla-ai-autopilot/jasmine_testing_results.png',
     '/images/ai-dev/carla-ai-autopilot/big-query-example.png',
   ];
 

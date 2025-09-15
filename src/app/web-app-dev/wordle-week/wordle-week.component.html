@@ -1,39 +1,84 @@
-<body class="bg-[#0B0C10] text-[#66FCF1] p-5">
-  <div class="flex items-center justify-center p-3 text-5xl mb-10">
-    <h1>WordleWeek</h1>
-  </div>
-  <div class="ml-10 mr-10">
-    <a
-      class="btn btn-primary flex justify-center items-center mb-4"
-      target="_blank"
-      href="https://github.com/SumukhP-dev/Wordle_Week_IOS_App"
-      >Link to Github Repository</a
+<body class="bg-[#0B0C10] text-[#C5C6C7] p-5 font-sans">
+  <!-- Title -->
+  <div class="flex items-center justify-center p-3 mb-10">
+    <h1
+      class="text-5xl font-extrabold text-[#66FCF1] drop-shadow-lg tracking-wide"
     >
-    <div class="">
-      <ngb-carousel
-        #carousel
-        [interval]="1000"
-        [pauseOnHover]="pauseOnHover"
-        [pauseOnFocus]="pauseOnFocus"
-        (slide)="onSlide($event)"
-      >
-        @for (img of images; track img; let i = $index) {
-        <ng-template ngbSlide>
-          <div
-            class="picsum-img-wrapper flex flex-row min-h-screen justify-center items-center"
-          >
-            <img [src]="img" alt="My image {{ i + 1 }} description" />
-          </div>
-        </ng-template>
-        }
-      </ngb-carousel>
-
-      <hr />
-    </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+      Wordle Week iOS App
+    </h1>
   </div>
+
+  <!-- Project Description -->
+  <div class="ml-5 mr-5 sm:ml-10 sm:mr-10 p-5">
+    <div
+      class="bg-[#1F2833] p-6 rounded-lg shadow-md leading-relaxed text-lg border border-[#45A29E] border-opacity-30"
+    >
+      <p class="mx-4">
+        <span class="text-[#66FCF1] font-bold">WordleWeek</span> is a
+        <span class="font-semibold text-[#66FCF1]"
+          >SwiftUI-based word game</span
+        >
+        where players guess a hidden five-letter word within six attempts. Built
+        solo, the app features an interactive
+        <span class="font-semibold text-[#66FCF1]">6×5 grid</span>, a dynamic
+        on-screen keyboard, animated letter tiles, and
+        <span class="font-semibold text-[#66FCF1]">color-coded feedback</span>
+        for guesses. A
+        <span class="font-semibold text-[#66FCF1]">New Game button</span>
+        provides instant restarts for fresh challenges.
+        <br /><br />
+        Developed entirely from scratch, it highlights expertise in
+        <span class="font-semibold text-[#66FCF1]">MVVM architecture</span>,
+        <span class="font-semibold text-[#66FCF1]"
+          >SwiftUI component design</span
+        >,
+        <span class="font-semibold text-[#66FCF1]"
+          >Combine for state management</span
+        >, and crafting
+        <span class="font-semibold text-[#66FCF1]"
+          >polished interactive animations</span
+        >.
+      </p>
+    </div>
+  </div>
+
+  <!-- Links Section -->
+  <div class="ml-5 mr-5 sm:ml-10 sm:mr-10 flex flex-col items-center">
+    <a
+      href="https://github.com/SumukhP-dev/Wordle_Week_IOS_App"
+      target="_blank"
+      class="w-full sm:w-auto bg-[#1F2833] hover:bg-[#66FCF1] text-[#C5C6C7] font-semibold py-2 px-6 rounded-md shadow-md transition duration-300 ease-in-out transform hover:scale-105 mb-5 text-center"
+    >
+      💻 View on GitHub
+    </a>
+  </div>
+
+  <!-- Carousel Section -->
+  <div class="ml-5 mr-5 sm:ml-10 sm:mr-10 p-5">
+    <ngb-carousel
+      #carousel
+      [interval]="2000"
+      [pauseOnHover]="pauseOnHover"
+      [pauseOnFocus]="pauseOnFocus"
+      (slide)="onSlide($event)"
+      class="mb-6"
+    >
+      @for (img of images; track img; let i = $index) {
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper flex justify-center items-center">
+          <img
+            [src]="img"
+            alt="My image {{ i + 1 }} description"
+            class="rounded-lg shadow-lg"
+          />
+        </div>
+      </ng-template>
+      }
+    </ngb-carousel>
+
+    <hr class="border-[#45A29E] opacity-40 mb-6" />
+  </div>
+
+  <!-- Spacing at bottom -->
+  <div class="h-32"></div>
 </body>
