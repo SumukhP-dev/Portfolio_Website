@@ -18,6 +18,7 @@ import { NutchWebCrawlerWithMemcachedserverComponent } from './web-server-crawle
 import { VotingLedgerFabricApplicationComponent } from './web-server-crawler-dev/voting-ledger-fabric-application/voting-ledger-fabric-application.component';
 import { WordleWeekComponent } from './web-app-dev/wordle-week/wordle-week.component';
 import { ProjectsResolver } from './resolvers/projects.resolver';
+import { PaymentApiWithValidationEngineComponent } from './web-server-crawler-dev/payment-api-with-validation-engine/payment-api-with-validation-engine.component';
 
 export const routes: Routes = [
   {
@@ -57,6 +58,10 @@ export const routes: Routes = [
   {
     path: 'wordleweek',
     component: WordleWeekComponent,
+  },
+  {
+    path: 'paymentapiwithvalidationengine',
+    component: PaymentApiWithValidationEngineComponent,
   },
 
   { path: '', component: StartComponent },
