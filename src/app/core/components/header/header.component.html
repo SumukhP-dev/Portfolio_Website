@@ -1,95 +1,99 @@
-<div class="link-primary flex items-center">
+<div class="link-primary">
   <igx-navbar [isActionButtonVisible]="true">
-    <igx-navbar-action>
-      <button igxButton routerLink="/home">
-        <igx-icon style="width: 24px; height: 24px; font-size: 24px"
-          >home</igx-icon
+    <igx-navbar-action class="flex justify-between w-full items-center">
+      <!-- LEFT NAVIGATION LINKS -->
+      <div class="flex items-center space-x-2">
+        <button igxButton routerLink="/home">
+          <igx-icon style="width: 24px; height: 24px; font-size: 24px">
+            home
+          </igx-icon>
+        </button>
+
+        <button
+          igxButton="outlined"
+          [igxToggleAction]="dropdownAI"
+          [igxDropDownItemNavigation]="dropdownAI"
         >
-      </button>
-      <button
-        igxButton="outlined"
-        [igxToggleAction]="dropdownAI"
-        [igxDropDownItemNavigation]="dropdownAI"
-        class="mx-2"
-      >
-        AI Projects
-      </button>
-      <igx-drop-down #dropdownAI>
-        <igx-drop-down-item routerLink="/healthcarepolicyimpacttracker">
-          Healthcare Policy Impact Tracker Website
-        </igx-drop-down-item>
-        <igx-drop-down-item routerLink="/weathernow">
-          WeatherNow Website
-        </igx-drop-down-item>
-        <igx-drop-down-item routerLink="/carlaaiautopilot">
-          CARLA Autopilot Multimodal LLM/Vision Transformer AI Model
-        </igx-drop-down-item>
-        <igx-drop-down-item routerLink="/mymoneytracker">
-          MyMoneyTracker App
-        </igx-drop-down-item>
-      </igx-drop-down>
-      <button
-        igxButton="outlined"
-        [igxToggleAction]="dropdownWebApp"
-        [igxDropDownItemNavigation]="dropdownWebApp"
-      >
-        Web and App Development Projects
-      </button>
-      <igx-drop-down #dropdownWebApp>
-        <igx-drop-down-item routerLink="/nextjsdashboard">
-          Nextjs Finance Dashboard Website
-        </igx-drop-down-item>
-        <igx-drop-down-item routerLink="/healthtracker">
-          HealthTracker App
-        </igx-drop-down-item>
-        <igx-drop-down-item routerLink="/wordleweek">
-          WordleWeek App
-        </igx-drop-down-item>
-      </igx-drop-down>
-      <button
-        igxButton="outlined"
-        [igxToggleAction]="dropdownWebServer"
-        [igxDropDownItemNavigation]="dropdownWebServer"
-        class="mx-2"
-      >
-        Web Server/Crawlers
-      </button>
-      <igx-drop-down #dropdownWebServer>
-        <igx-drop-down-item routerLink="/paymentapiwithvalidationengine">
-          Payment API with Validation Engine Website
-        </igx-drop-down-item>
-        <igx-drop-down-item routerLink="/apachetomcatwebapplicationserver">
-          Apache Tomcat Web Application Server
-        </igx-drop-down-item>
-        <igx-drop-down-item routerLink="/nutchwebcrawlerwithmemcachedserver">
-          Nutch Web Crawler With Memcached Server
-        </igx-drop-down-item>
-      </igx-drop-down>
+          AI Projects
+        </button>
+        <igx-drop-down #dropdownAI>
+          <igx-drop-down-item routerLink="/healthcarepolicyimpacttracker">
+            Healthcare Policy Impact Tracker Website
+          </igx-drop-down-item>
+          <igx-drop-down-item routerLink="/weathernow">
+            WeatherNow Website
+          </igx-drop-down-item>
+          <igx-drop-down-item routerLink="/carlaaiautopilot">
+            CARLA Autopilot AI Model
+          </igx-drop-down-item>
+          <igx-drop-down-item routerLink="/mymoneytracker">
+            MyMoneyTracker App
+          </igx-drop-down-item>
+        </igx-drop-down>
 
-      <button
-        igxButton="outlined"
-        [igxToggleAction]="dropdownBlockchain"
-        [igxDropDownItemNavigation]="dropdownBlockchain"
-        class="mx-2"
-      >
-        Blockchain/Mobile Trace Simulator
-      </button>
-      <igx-drop-down #dropdownBlockchain>
-        <igx-drop-down-item routerLink="/votingledgerfabricapplication">
-          Voting Ledger Fabric Application
-        </igx-drop-down-item>
-        <igx-drop-down-item routerLink="/gtmobisimmobiletracegeneration">
-          GT Mobisim Mobile Trace Generation
-        </igx-drop-down-item>
-      </igx-drop-down>
+        <button
+          igxButton="outlined"
+          [igxToggleAction]="dropdownWebApp"
+          [igxDropDownItemNavigation]="dropdownWebApp"
+        >
+          Web and App Development Projects
+        </button>
+        <igx-drop-down #dropdownWebApp>
+          <igx-drop-down-item routerLink="/nextjsdashboard">
+            Nextjs Finance Dashboard Website
+          </igx-drop-down-item>
+          <igx-drop-down-item routerLink="/healthtracker">
+            HealthTracker App
+          </igx-drop-down-item>
+          <igx-drop-down-item routerLink="/wordleweek">
+            WordleWeek App
+          </igx-drop-down-item>
+        </igx-drop-down>
 
-      <div class="ml-auto flex items-center gap-3">
+        <button
+          igxButton="outlined"
+          [igxToggleAction]="dropdownWebServer"
+          [igxDropDownItemNavigation]="dropdownWebServer"
+        >
+          Web Server/Crawlers
+        </button>
+        <igx-drop-down #dropdownWebServer>
+          <igx-drop-down-item routerLink="/paymentapiwithvalidationengine">
+            Payment API with Validation Engine Website
+          </igx-drop-down-item>
+          <igx-drop-down-item routerLink="/apachetomcatwebapplicationserver">
+            Apache Tomcat Web Application Server
+          </igx-drop-down-item>
+          <igx-drop-down-item routerLink="/nutchwebcrawlerwithmemcachedserver">
+            Nutch Web Crawler With Memcached Server
+          </igx-drop-down-item>
+        </igx-drop-down>
+
+        <button
+          igxButton="outlined"
+          [igxToggleAction]="dropdownBlockchain"
+          [igxDropDownItemNavigation]="dropdownBlockchain"
+        >
+          Blockchain/Mobile Trace Simulator
+        </button>
+        <igx-drop-down #dropdownBlockchain>
+          <igx-drop-down-item routerLink="/votingledgerfabricapplication">
+            Voting Ledger Fabric Application
+          </igx-drop-down-item>
+          <igx-drop-down-item routerLink="/gtmobisimmobiletracegeneration">
+            GT Mobisim Mobile Trace Generation
+          </igx-drop-down-item>
+        </igx-drop-down>
+      </div>
+
+      <!-- RIGHT LINKS (LinkedIn + GitHub) -->
+      <div class="flex items-center space-x-2">
         <a
           igxButton
           target="_blank"
           href="https://www.linkedin.com/in/sumukh-paspuleti/"
         >
-          Linkedin Profile
+          LinkedIn Profile
         </a>
         <a igxButton target="_blank" href="https://github.com/SumukhP-dev">
           GitHub Account
