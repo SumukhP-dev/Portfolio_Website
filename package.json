@@ -2,12 +2,16 @@
   "name": "portfolio",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs"
+  "ng": "ng",
+  "start": "ng serve",
+  "watch": "ng build --watch --configuration development",
+  "build": "ng build",
+  "build:prod": "ng build --configuration production",
+  "build:ssr": "ng run portfolio:build:ssr",
+  "serve:ssr": "node dist/portfolio/server/server.mjs",
+  "test": "ng test",
+  "preview": "npm run build:prod && npx http-server ./dist/portfolio/browser -p 8080 -c-1",
+  "preview:ssr": "npm run build:ssr && npm run serve:ssr"
   },
   "private": true,
   "dependencies": {
@@ -63,6 +67,7 @@
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
     "autoprefixer": "^10.4.21",
+    "http-server": "^14.1.1",
     "init": "^0.1.2",
     "jasmine-core": "~5.4.0",
     "karma": "~6.4.0",
