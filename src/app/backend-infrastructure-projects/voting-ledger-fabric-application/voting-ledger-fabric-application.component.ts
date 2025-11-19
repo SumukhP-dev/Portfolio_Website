@@ -20,6 +20,12 @@ export class VotingLedgerFabricApplicationComponent {
     '/images/backend-infrastructure-projects/voting-ledger-fabric-application/example-query-candidate.jpg',
   ];
 
+  altTexts = [
+    'Voting Ledger Fabric application get votes example',
+    'Voting Ledger Fabric application puppy vote example',
+    'Voting Ledger Fabric application query candidate example',
+  ];
+
   paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;

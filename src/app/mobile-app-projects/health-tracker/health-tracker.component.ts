@@ -26,6 +26,19 @@ export class HealthTrackerComponent {
     '/images/mobile-app-projects/health-tracker/database-console-firebase-3.png',
   ];
 
+  altTexts = [
+    'HealthTracker app sprite character',
+    'HealthTracker app login page',
+    'HealthTracker app personal information page',
+    'HealthTracker app calorie tracking page',
+    'HealthTracker app workout plans page',
+    'HealthTracker app workout tracker page',
+    'HealthTracker app community page',
+    'HealthTracker Firebase database console view 1',
+    'HealthTracker Firebase database console view 2',
+    'HealthTracker Firebase database console view 3',
+  ];
+
   paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;

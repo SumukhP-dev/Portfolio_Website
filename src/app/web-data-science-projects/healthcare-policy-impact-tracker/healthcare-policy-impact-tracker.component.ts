@@ -22,6 +22,15 @@ export class HealthcarePolicyImpactTrackerComponent {
     '/images/web-data-science-projects/healthcare-policy-impact-tracker/website-path-diagram.png',
   ];
 
+  altTexts = [
+    'Healthcare Policy Impact Tracker frontend interface view 1',
+    'Healthcare Policy Impact Tracker frontend interface view 2',
+    'Healthcare Policy Impact Tracker frontend interface view 3',
+    'Healthcare Policy Impact Tracker project dataset diagram',
+    'Healthcare Policy Impact Tracker project architecture diagram',
+    'Healthcare Policy Impact Tracker website navigation path diagram',
+  ];
+
   paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;

@@ -26,6 +26,19 @@ export class MyMoneyTrackerComponent {
     '/images/mobile-app-projects/my-money-tracker/my-money-tracker-sql-entity-relation-database-diagram.png',
   ];
 
+  altTexts = [
+    'MyMoneyTracker app splash screen',
+    'MyMoneyTracker app login page',
+    'MyMoneyTracker app home page with financial overview',
+    'MyMoneyTracker app transaction history page',
+    'MyMoneyTracker app add transaction page',
+    'MyMoneyTracker app summary page with charts',
+    'MyMoneyTracker app settings page',
+    'MyMoneyTracker Azure backend configuration',
+    'MyMoneyTracker app LLM financial tips page',
+    'MyMoneyTracker SQL database entity relationship diagram',
+  ];
+
   paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;

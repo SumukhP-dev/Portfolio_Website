@@ -22,6 +22,14 @@ export class GtmobisimMobileTraceGenerationComponent {
     '/images/misc-projects/gtmobisim-mobile-trace-generation/10-agent-trace-map5.png',
   ];
 
+  altTexts = [
+    'GT MobiSim 10-agent mobile trace map visualization 1',
+    'GT MobiSim 10-agent mobile trace map visualization 2',
+    'GT MobiSim 10-agent mobile trace map visualization 3',
+    'GT MobiSim 10-agent mobile trace map visualization 4',
+    'GT MobiSim 10-agent mobile trace map visualization 5',
+  ];
+
   paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;

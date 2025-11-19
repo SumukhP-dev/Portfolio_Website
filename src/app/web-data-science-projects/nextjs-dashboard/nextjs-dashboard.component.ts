@@ -23,6 +23,16 @@ export class NextjsdashboardComponent {
     '/images/web-data-science-projects/nextjs-dashboard/postgresql-console-neon-tech.png',
   ];
 
+  altTexts = [
+    'Next.js Finance Dashboard introduction page',
+    'Next.js Finance Dashboard login page',
+    'Next.js Finance Dashboard sign up page',
+    'Next.js Finance Dashboard main dashboard with revenue charts',
+    'Next.js Finance Dashboard invoices overview page',
+    'Next.js Finance Dashboard create invoice page',
+    'Next.js Finance Dashboard Neon PostgreSQL database console',
+  ];
+
   paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;

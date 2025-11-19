@@ -20,6 +20,12 @@ export class ApacheTomcatWebApplicationServerComponent {
     '/images/backend-infrastructure-projects/apache-tomcat-web-application-server/requests-record-page-details2.jpg',
   ];
 
+  altTexts = [
+    'Apache Tomcat web application server start page',
+    'Apache Tomcat requests record page details view 1',
+    'Apache Tomcat requests record page details view 2',
+  ];
+
   paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;

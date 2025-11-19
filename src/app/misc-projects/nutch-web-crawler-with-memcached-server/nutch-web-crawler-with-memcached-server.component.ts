@@ -20,6 +20,12 @@ export class NutchWebCrawlerWithMemcachedServerComponent {
     '/images/misc-projects/nutch-web-crawler-with-memcached-server/memcached-server-store-data-in-cache.png',
   ];
 
+  altTexts = [
+    'Nutch web crawler URL crawl example completed',
+    'Nutch web crawler Memcached server code implementation',
+    'Nutch web crawler Memcached server storing data in cache',
+  ];
+
   paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;

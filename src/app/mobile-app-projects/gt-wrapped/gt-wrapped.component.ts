@@ -20,6 +20,13 @@ export class GTWrappedComponent {
     '/images/mobile-app-projects/gt-wrapped/figma-insights-page.png',
   ];
 
+  altTexts = [
+    'GTWrapped app insights page',
+    'GTWrapped app login page',
+    'GTWrapped app map page',
+    'GTWrapped app Figma design insights page',
+  ];
+
   paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;

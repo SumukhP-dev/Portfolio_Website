@@ -49,28 +49,18 @@
     </a>
   </div>
 
-  <!-- Carousel Section -->
+  <!-- Video Demo Section -->
   <div class="ml-5 mr-5 sm:ml-10 sm:mr-10 p-5">
-    <ngb-carousel
-      #carousel
-      [interval]="2000"
-      [pauseOnHover]="pauseOnHover"
-      [pauseOnFocus]="pauseOnFocus"
-      (slide)="onSlide($event)"
-      class="mb-6"
-    >
-      @for (img of images; track img; let i = $index) {
-      <ng-template ngbSlide>
-        <div class="picsum-img-wrapper flex justify-center items-center">
-          <img
-            [src]="img"
-            alt="My image {{ i + 1 }} description"
-            class="rounded-lg shadow-lg"
-          />
-        </div>
-      </ng-template>
-      }
-    </ngb-carousel>
+    <div class="flex justify-center items-center mb-6">
+      <video
+        [src]="videoPath"
+        controls
+        class="rounded-lg shadow-lg max-w-full h-auto"
+        style="max-width: 100%; height: auto;"
+      >
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
     <hr class="border-[#45A29E] opacity-40 mb-6" />
   </div>

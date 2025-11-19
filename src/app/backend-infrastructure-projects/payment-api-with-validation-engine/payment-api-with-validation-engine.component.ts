@@ -20,6 +20,12 @@ export class PaymentApiWithValidationEngineComponent {
     '/images/backend-infrastructure-projects/payment-api-with-validation-engine/swagger-payment-schema-page.png',
   ];
 
+  altTexts = [
+    'Payment API Swagger documentation GET request example',
+    'Payment API Swagger documentation POST request example',
+    'Payment API Swagger documentation payment schema',
+  ];
+
   paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;

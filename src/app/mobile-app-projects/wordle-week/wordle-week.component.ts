@@ -20,6 +20,12 @@ export class WordleWeekComponent {
     '/images/mobile-app-projects/wordle-week/guess3.png',
   ];
 
+  altTexts = [
+    'WordleWeek iOS app first guess gameplay',
+    'WordleWeek iOS app second guess gameplay',
+    'WordleWeek iOS app third guess gameplay',
+  ];
+
   paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;

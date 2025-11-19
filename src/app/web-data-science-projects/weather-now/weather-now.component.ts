@@ -24,6 +24,17 @@ export class WeathernowComponent {
     '/images/web-data-science-projects/weather-now/figma-login-page.png',
   ];
 
+  altTexts = [
+    'Weather Now website home page view 1',
+    'Weather Now website home page view 2',
+    'Weather Now website forecast page',
+    'Weather Now website Gemini AI chatbot page',
+    'Weather Now website RAG chatbot page',
+    'Weather Now Figma design forecast page',
+    'Weather Now Figma design heatmap page',
+    'Weather Now Figma design login page',
+  ];
+
   paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;
