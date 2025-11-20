@@ -73,22 +73,16 @@
           </igx-drop-down-item>
         </igx-drop-down>
 
-        <!-- Miscellaneous Projects -->
+        <!-- Research Projects -->
         <button
           igxButton="outlined"
-          [igxToggleAction]="dropdownMisc"
-          [igxDropDownItemNavigation]="dropdownMisc"
+          [igxToggleAction]="dropdownResearch"
+          [igxDropDownItemNavigation]="dropdownResearch"
           class="mx-1"
         >
-          Miscellaneous
+          Research Projects
         </button>
-        <igx-drop-down #dropdownMisc>
-          <igx-drop-down-item routerLink="/nutchwebcrawlerwithmemcachedserver">
-            Nutch Web Crawler + Memcached
-          </igx-drop-down-item>
-          <igx-drop-down-item routerLink="/gtmobisimmobiletracegeneration">
-            GT MobiSim Trace Generator
-          </igx-drop-down-item>
+        <igx-drop-down #dropdownResearch>
           <igx-drop-down-item routerLink="/carlaaiautopilot">
             CARLA Autopilot AI Model
           </igx-drop-down-item>
