@@ -4,7 +4,7 @@
     <h1
       class="text-5xl font-extrabold text-[#66FCF1] drop-shadow-lg tracking-wide"
     >
-      WeatherNow Website
+      Dream Flow – AI Bedtime Story & Relaxation Platform
     </h1>
   </div>
 
@@ -14,16 +14,33 @@
       class="bg-[#1F2833] p-6 rounded-lg shadow-md leading-relaxed text-lg border border-[#45A29E] border-opacity-30"
     >
       <p class="mx-4">
-        <span class="text-[#66FCF1] font-bold">WeatherNow</span> is a full-stack
-        web application built to deliver real-time weather information in a
-        clean and interactive interface. The platform integrates
-        <span class="font-semibold text-[#66FCF1]">React Router</span> on the
-        frontend with a
-        <span class="font-semibold text-[#66FCF1]">Django + PostgreSQL</span>
-        backend, featuring API integrations with
-        <span class="font-semibold text-[#66FCF1]">OpenWeather</span> and custom
-        chatbot functionalities powered by
-        <span class="font-semibold text-[#66FCF1]">Gemini & RAG models</span>.
+        <span class="text-[#66FCF1] font-bold">Dream Flow</span> is a
+        full‑stack AI experience that generates personalized bedtime stories,
+        narration, and calming visuals based on a user’s mood, routine, and
+        preferences. The frontend is built with a
+        <span class="font-semibold text-[#66FCF1]">Next.js monorepo</span>
+        (consumer app + studio app) using a shared
+        <span class="font-semibold text-[#66FCF1]"
+          >TypeScript design system</span
+        >
+        and component library, while a
+        <span class="font-semibold text-[#66FCF1]">FastAPI backend</span>
+        orchestrates LLM story generation, text‑to‑speech narration, and
+        image/video rendering.
+        <br /><br />
+        The platform integrates
+        <span class="font-semibold text-[#66FCF1]">Supabase</span> for
+        authentication and session history,
+        <span class="font-semibold text-[#66FCF1]">React Query</span> for
+        performant data fetching, and supports offline playback, media
+        downloads, and journaling features like mood reflections and moodboard
+        “inspirations.” The stack includes
+        <span class="font-semibold text-[#66FCF1]"
+          >Next.js, TypeScript, React Query, Supabase, FastAPI, HuggingFace/Ollama
+          LLMs, TTS,</span
+        >
+        and <span class="font-semibold text-[#66FCF1]">pnpm workspaces</span> to
+        coordinate the monorepo.
       </p>
     </div>
   </div>
@@ -31,47 +48,11 @@
   <!-- Links Section -->
   <div class="ml-5 mr-5 sm:ml-10 sm:mr-10 flex flex-col items-center">
     <a
-      href="https://weather-now-plqx.vercel.app/"
-      target="_blank"
-      role="button"
-      class="w-full sm:w-auto bg-[#45A29E] hover:bg-[#66FCF1] text-[#0B0C10] font-semibold py-2 px-6 rounded-md shadow-md transition duration-300 ease-in-out transform hover:scale-105 mb-3 text-center"
+      href="#"
+      class="w-full sm:w-auto bg-[#1F2833] text-[#C5C6C7] font-semibold py-2 px-6 rounded-md shadow-md mb-5 text-center cursor-default"
     >
-      🌐 Visit Website
+      🌐 Live demo & repository coming soon
     </a>
-
-    <a
-      href="https://github.com/SumukhP-dev/Weather_Now_Website"
-      target="_blank"
-      class="w-full sm:w-auto bg-[#1F2833] hover:bg-[#66FCF1] text-[#C5C6C7] font-semibold py-2 px-6 rounded-md shadow-md transition duration-300 ease-in-out transform hover:scale-105 mb-5 text-center"
-    >
-      💻 View on GitHub
-    </a>
-  </div>
-
-  <!-- Carousel Section -->
-  <div class="ml-5 mr-5 sm:ml-10 sm:mr-10 p-5">
-    <ngb-carousel
-      #carousel
-      [interval]="2000"
-      [pauseOnHover]="pauseOnHover"
-      [pauseOnFocus]="pauseOnFocus"
-      (slide)="onSlide($event)"
-      class="mb-6"
-    >
-      @for (img of images; track img; let i = $index) {
-      <ng-template ngbSlide>
-        <div class="picsum-img-wrapper flex justify-center items-center">
-          <img
-            [src]="img"
-            [alt]="altTexts[i]"
-            class="rounded-lg shadow-lg"
-          />
-        </div>
-      </ng-template>
-      }
-    </ngb-carousel>
-
-    <hr class="border-[#45A29E] opacity-40 mb-6" />
   </div>
 
   <!-- Spacing at bottom -->

@@ -4,7 +4,7 @@
     <h1
       class="text-5xl font-extrabold text-[#66FCF1] drop-shadow-lg tracking-wide"
     >
-      Wordle Week iOS App
+      CS:GO 2 Real-Time Voice Translation
     </h1>
   </div>
 
@@ -14,30 +14,31 @@
       class="bg-[#1F2833] p-6 rounded-lg shadow-md leading-relaxed text-lg border border-[#45A29E] border-opacity-30"
     >
       <p class="mx-4">
-        <span class="text-[#66FCF1] font-bold">WordleWeek</span> is a
-        <span class="font-semibold text-[#66FCF1]"
-          >SwiftUI-based word game</span
-        >
-        where players guess a hidden five-letter word within six attempts. Built
-        solo, the app features an interactive
-        <span class="font-semibold text-[#66FCF1]">6×5 grid</span>, a dynamic
-        on-screen keyboard, animated letter tiles, and
-        <span class="font-semibold text-[#66FCF1]">color-coded feedback</span>
-        for guesses. A
-        <span class="font-semibold text-[#66FCF1]">New Game button</span>
-        provides instant restarts for fresh challenges.
+        <span class="text-[#66FCF1] font-bold">CS:GO 2 Voice Translation</span>
+        is a real-time desktop application that captures in-game voice chat,
+        transcribes it with
+        <span class="font-semibold text-[#66FCF1]">OpenAI Whisper</span>, and
+        translates it into the player’s preferred language with on-screen
+        subtitles. It supports
+        <span class="font-semibold text-[#66FCF1]">bidirectional translation</span>
+        (teammates → you, you → teammates), works with
+        <span class="font-semibold text-[#66FCF1]">15+ languages</span>, and is
+        optimized for low latency using local AI models
+        (<span class="font-semibold text-[#66FCF1]"
+          >Whisper + EasyNMT/PyTorch</span
+        >) so it can run fully offline.
         <br /><br />
-        Developed entirely from scratch, it highlights expertise in
-        <span class="font-semibold text-[#66FCF1]">MVVM architecture</span>,
+        The production version uses a
+        <span class="font-semibold text-[#66FCF1]">Tauri + React + TypeScript</span>
+        frontend with a
+        <span class="font-semibold text-[#66FCF1]">Rust backend</span> for
+        high-performance audio capture and a
         <span class="font-semibold text-[#66FCF1]"
-          >SwiftUI component design</span
-        >,
-        <span class="font-semibold text-[#66FCF1]"
-          >Combine for state management</span
-        >, and crafting
-        <span class="font-semibold text-[#66FCF1]"
-          >polished interactive animations</span
-        >.
+          >Python FastAPI ML service</span
+        >
+        for speech recognition and translation. Additional features include a
+        configurable overlay, statistics dashboard, match history, Discord
+        integration, and a guided setup wizard tailored for competitive gaming.
       </p>
     </div>
   </div>
@@ -45,38 +46,11 @@
   <!-- Links Section -->
   <div class="ml-5 mr-5 sm:ml-10 sm:mr-10 flex flex-col items-center">
     <a
-      href="https://github.com/SumukhP-dev/Wordle_Week_IOS_App"
-      target="_blank"
-      class="w-full sm:w-auto bg-[#1F2833] hover:bg-[#66FCF1] text-[#C5C6C7] font-semibold py-2 px-6 rounded-md shadow-md transition duration-300 ease-in-out transform hover:scale-105 mb-5 text-center"
+      href="#"
+      class="w-full sm:w-auto bg-[#1F2833] text-[#C5C6C7] font-semibold py-2 px-6 rounded-md shadow-md mb-5 text-center cursor-default"
     >
-      💻 View on GitHub
+      💻 Repository & demo coming soon
     </a>
-  </div>
-
-  <!-- Carousel Section -->
-  <div class="ml-5 mr-5 sm:ml-10 sm:mr-10 p-5">
-    <ngb-carousel
-      #carousel
-      [interval]="2000"
-      [pauseOnHover]="pauseOnHover"
-      [pauseOnFocus]="pauseOnFocus"
-      (slide)="onSlide($event)"
-      class="mb-6"
-    >
-      @for (img of images; track img; let i = $index) {
-      <ng-template ngbSlide>
-        <div class="picsum-img-wrapper flex justify-center items-center">
-          <img
-            [src]="img"
-            [alt]="altTexts[i]"
-            class="rounded-lg shadow-lg"
-          />
-        </div>
-      </ng-template>
-      }
-    </ngb-carousel>
-
-    <hr class="border-[#45A29E] opacity-40 mb-6" />
   </div>
 
   <!-- Spacing at bottom -->
