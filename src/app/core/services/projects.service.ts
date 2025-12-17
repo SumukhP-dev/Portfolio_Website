@@ -15,12 +15,12 @@ export interface Project {
 export class ProjectsService {
   private projects: Project[] = [
     {
-      id: 'wordleweek',
-      title: 'WordleWeek IOS App',
+      id: 'csgo-voice-translation',
+      title: 'CS:GO 2 Real-Time Voice Translation',
       description:
-        'I created a small IOS app with the Swift programming language to allow users to play wordle. The app also uses the SwiftUI Color API to dynamically update the wordle grid.',
-      category: 'web-app-dev',
-      image: '/logos/swift-logo.png',
+        'A real-time desktop companion app for CS:GO 2 that captures in-game voice chat, transcribes it with OpenAI Whisper, and translates it into the player’s preferred language with low-latency subtitles.',
+      category: 'ai-dev',
+      image: '/logos/python-logo.png',
     },
     {
       id: 'mymoneytracker',
@@ -44,15 +44,15 @@ export class ProjectsService {
       description:
         'I programmed a dashboard for a finance website using the Next.js framework. I created user authentication using the NextAuth.js library and form validation using the Zod library.',
       category: 'web-app-dev',
-      image: '/logos/nextjs-logo.jpeg',
+      image: '/logos/nextjs-logo.jpg',
     },
     {
-      id: 'weathernow',
-      title: 'Weather Now Website',
+      id: 'dream-flow-ai-platform',
+      title: 'Dream Flow AI Story Generation Platform',
       description:
-        'I built a React weather website that uses the OpenWeatherMap API to fetch recent weather information and display said data with widgets. I deployed the website on Vercel to test the website’s features in a live production environment.',
-      category: 'web-app-dev',
-      image: '/logos/react-router-logo.png',
+        'A full-stack AI experience that generates personalized bedtime stories and calming media using a Next.js monorepo frontend and a FastAPI + LLM backend.',
+      category: 'ai-dev',
+      image: '/logos/vercel-logo.png',
     },
     {
       id: 'healthcare-policy-tracker',

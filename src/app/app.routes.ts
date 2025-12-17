@@ -26,7 +26,7 @@ export const routes: Routes = [
   { path: 'gtwrapped', component: GTWrappedComponent },
   { path: 'healthtracker', component: HealthTrackerComponent },
   { path: 'nextjsdashboard', component: NextjsdashboardComponent },
-  { path: 'weathernow', component: WeathernowComponent },
+  { path: 'dream-flow-ai-platform', component: WeathernowComponent },
   {
     path: 'healthcarepolicyimpacttracker',
     component: HealthcarePolicyImpactTrackerComponent,
@@ -49,8 +49,19 @@ export const routes: Routes = [
     component: VotingLedgerFabricApplicationComponent,
   },
   {
-    path: 'wordleweek',
+    path: 'csgo-voice-translation',
     component: WordleWeekComponent,
+  },
+  // Legacy paths kept as redirects so old links still work
+  {
+    path: 'wordleweek',
+    redirectTo: 'csgo-voice-translation',
+    pathMatch: 'full',
+  },
+  {
+    path: 'weathernow',
+    redirectTo: 'dream-flow-ai-platform',
+    pathMatch: 'full',
   },
   {
     path: 'paymentapiwithvalidationengine',
