@@ -16,10 +16,10 @@ export class ProjectsService {
   private projects: Project[] = [
     {
       id: 'csgo-voice-translation',
-      title: 'CS:GO 2 Real-Time Voice Translation',
+      title: 'Real-Time Voice Translation Application',
       description:
-        'A real-time desktop companion app for CS:GO 2 that captures in-game voice chat, transcribes it with OpenAI Whisper, and translates it into the player’s preferred language with low-latency subtitles.',
-      category: 'ai-dev',
+        'I developed a real-time voice translation desktop app using Python, PyQt6, and OpenAI Whisper that enables bidirectional in-game voice communication with automatic language detection across 15+ languages, optimized with local EasyNMT/PyTorch models for sub-second latency.',
+      category: 'web-app-dev',
       image: '/logos/python-logo.png',
     },
     {
@@ -50,9 +50,9 @@ export class ProjectsService {
       id: 'dream-flow-ai-platform',
       title: 'Dream Flow AI Story Generation Platform',
       description:
-        'A full-stack AI experience that generates personalized bedtime stories and calming media using a Next.js monorepo frontend and a FastAPI + LLM backend.',
-      category: 'ai-dev',
-      image: '/logos/vercel-logo.png',
+        'I built an AI story generation platform using FastAPI and HuggingFace/Ollama LLMs with a Flutter frontend and Supabase authentication that generates personalized bedtime stories with text-to-speech narration in 15–30 seconds while supporting multiple concurrent users.',
+      category: 'web-app-dev',
+      image: '/logos/flutter-logo.png',
     },
     {
       id: 'healthcare-policy-tracker',

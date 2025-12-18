@@ -15,6 +15,8 @@ import { NextjsdashboardComponent } from './web-data-science-projects/nextjs-das
 import { WeathernowComponent } from './web-data-science-projects/weather-now/weather-now.component';
 import { GTWrappedComponent } from './mobile-app-projects/gt-wrapped/gt-wrapped.component';
 import { HealthTrackerComponent } from './mobile-app-projects/health-tracker/health-tracker.component';
+import { RealTimeVoiceTranslationComponent } from './web-data-science-projects/real-time-voice-translation/real-time-voice-translation.component';
+import { DreamFlowAiPlatformComponent } from './mobile-app-projects/dream-flow-ai-platform/dream-flow-ai-platform.component';
 
 export const routes: Routes = [
   {
@@ -26,7 +28,7 @@ export const routes: Routes = [
   { path: 'gtwrapped', component: GTWrappedComponent },
   { path: 'healthtracker', component: HealthTrackerComponent },
   { path: 'nextjsdashboard', component: NextjsdashboardComponent },
-  { path: 'dream-flow-ai-platform', component: WeathernowComponent },
+  { path: 'dream-flow-ai-platform', component: DreamFlowAiPlatformComponent },
   {
     path: 'healthcarepolicyimpacttracker',
     component: HealthcarePolicyImpactTrackerComponent,
@@ -50,7 +52,7 @@ export const routes: Routes = [
   },
   {
     path: 'csgo-voice-translation',
-    component: WordleWeekComponent,
+    component: RealTimeVoiceTranslationComponent,
   },
   // Legacy paths kept as redirects so old links still work
   {
@@ -60,7 +62,7 @@ export const routes: Routes = [
   },
   {
     path: 'weathernow',
-    redirectTo: 'dream-flow-ai-platform',
+    redirectTo: 'nextjsdashboard',
     pathMatch: 'full',
   },
   {
